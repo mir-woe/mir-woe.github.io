@@ -1,0 +1,139 @@
+#redc{
+   overflow-y: hidden;
+   overflow-x: scroll;
+   display:flex;
+}
+
+#redc img{
+    margin:10px;
+}
+
+.seczy{
+   filter: brightness(55%);
+   filter: grayscale(100%);
+   transition:1s;
+}
+
+.seczy:hover{
+   filter: brightness(100%);
+   filter: grayscale(0%);
+}
+
+.child{    
+   border: solid;
+   border-radius: 5px;
+   width: 97%;
+   height: 392px;
+   margin-top: 9px !important;
+   height:auto;
+   margin: auto;
+}
+
+.child p{
+   margin-left:1em;
+   margin-right:1em;
+   text-align:left;
+}
+
+#pfpp {
+ float: right;
+ height: 150px;
+ margin: 1em;
+ border-radius: 10px;
+}
+
+.lala{
+   width:67%; margin:auto;}
+
+.butterfly{
+ height: 50px;
+ margin: auto;
+ position: relative;
+ margin:auto;
+}
+
+.bigbois{
+ height: 38.5px;
+ margin-top: 6px;
+ margin-left:auto ;
+ margin-right:auto;
+}
+
+.centre{
+margin:auto;
+}
+
+
+
+.lmaolmao{
+ margin:10px;
+ border-bottom:solid;
+ overflow:hidden;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+.lmaolmao{
+ border-top:solid;
+ padding-top:4px;
+   }
+
+.lala{ 
+ width:100%;
+ margin:unset;
+}
+
+#pfpp{
+ margin:auto;
+ width: 93%;
+ height:auto;
+ float:unset;
+ margin-top:10px !important;
+}
+
+.insomnia{
+ padding:auto;
+ margin:auto !important;
+ height: 22px;
+ border-bottom: 1px solid transparent;
+ transition: border-bottom 0.5s;
+}
+
+
+.papi{
+ width:100%;
+ position:relative;
+    }
+
+
+.unfortnuante-navigatiobefvg{			
+ text-align: center;
+ box-shadow:none;
+ border-radius:0px 0px 10px 10px;
+ border: solid;
+ border-top: none;
+ overflow: hidden;
+ height:auto;
+ width:90%;
+ top:auto;
+ left: 50%;
+ transform : translateX(-50%) translateY(-50%);
+ float: both;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top:-17px;
+ margin-bottom:0px;
+ display: flex;
+    }
+
+.rightboop{	
+ display:none;
+    }
+
+.pp{
+ margin-top:40px;
+    }
+}
+
