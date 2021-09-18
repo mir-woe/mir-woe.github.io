@@ -36,39 +36,36 @@
 }
 
 #pfpp {
- float: right;
- height: 150px;
- margin: 1em;
- border-radius: 10px;
+   float: right;
+   height: 150px;
+   margin: 1em;
+   border-radius: 10px;
 }
 
 .lala{
-   width:67%; margin:auto;}
+   width:67%; 
+   margin:auto;
+}
 
 .butterfly{
- height: 50px;
- margin: auto;
- position: relative;
- margin:auto;
-}
-
-.bigbois{
- height: 38.5px;
- margin-top: 6px;
- margin-left:auto ;
- margin-right:auto;
-}
-
-.centre{
-margin:auto;
+   height: 50px;
+   margin: auto;
+   position: relative;
+   margin:auto;
 }
 
 
+.socials{
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: unset;
+   margin-top: unset;
+}
 
 .lmaolmao{
- margin:10px;
- border-bottom:solid;
- overflow:hidden;
+   margin:10px;
+   border-bottom:solid;
+   overflow:hidden;
 }
 
 
@@ -92,48 +89,9 @@ margin:auto;
  float:unset;
  margin-top:10px !important;
 }
-
-.insomnia{
- padding:auto;
- margin:auto !important;
- height: 22px;
- border-bottom: 1px solid transparent;
- transition: border-bottom 0.5s;
-}
-
-
 .papi{
  width:100%;
  position:relative;
-    }
-
-
-.unfortnuante-navigatiobefvg{			
- text-align: center;
- box-shadow:none;
- border-radius:0px 0px 10px 10px;
- border: solid;
- border-top: none;
- overflow: hidden;
- height:auto;
- width:90%;
- top:auto;
- left: 50%;
- transform : translateX(-50%) translateY(-50%);
- float: both;
- margin-left: auto;
- margin-right: auto;
- margin-top:-17px;
- margin-bottom:0px;
- display: flex;
-    }
-
-.rightboop{	
- display:none;
-    }
-
-.pp{
- margin-top:40px;
     }
 }
 

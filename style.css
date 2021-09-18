@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
 body{
     background:#2d2e30;
+    padding: unset;
+    margin:unset;
     -webkit-touch-callout: none;
          -webkit-user-select: none;
          -khtml-user-select: none;
@@ -8,10 +13,39 @@ body{
          user-select: none;
 }
    
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2d2e30; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    width: 10px;
+    height: 10px;
+  }
+
+
+
 p{
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     color:#e3e6eb;
     font-family: 'Noto Sans', sans-serif;
+    text-align: Center;
 }
 
            
@@ -47,9 +81,41 @@ a{
    }
    
 
+@media only screen and (max-width: 600px){
+
+    p{    
+     font-size: calc(16px + 6 * ((100vw - 320px) / 680))
+        }
+        
+    img{
+     max-width: 100%; 
+     max-height: 100%;
+        }}
+    
 @media only screen and (min-width: 600px){
 
     p{    
      font-size: calc(16px + 6 * ((100vw - 320px) / 100000)) !important
         }
     }
+
+
+@keyframes fadedown {
+        0% {
+          transform: translateY(-1%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+    }
+ 
+div:nth-child(1){
+    animation: 1s ease-out 0s 1 fadedown;
+}
+div:nth-child(2){
+    animation: 1s ease-out 0s 1 fadedown;
+}
+div:nth-child(3){
+    animation: 1s ease-out 0s 1 fadedown;
+}
+               
