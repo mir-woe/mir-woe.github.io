@@ -13,51 +13,74 @@ body{
          user-select: none;
 }
    
+@keyframes fadedown {
+  0% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+          
+div{
+  margin-left:auto;
+  margin-right:auto;
+  color: #7eddd3;
+ }
+ 
+section{
+  color: #7eddd3;
+}
+
+div:nth-child(1){
+  animation: 1s ease-out 0s 1 fadedown;
+}
+div:nth-child(2){
+  animation: 1s ease-out 0s 1 fadedown;
+}
+div:nth-child(3){
+  animation: 1s ease-out 0s 1 fadedown;
+}
 
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
+  width: 5px;
+  height: 5px;
+}
 
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #2d2e30; 
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d2e30; 
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-    width: 10px;
-    height: 10px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  width: 10px;
+  height: 10px;
+}
 
 
 
 p{
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    color:#e3e6eb;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: Center;
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  color:#e3e6eb;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: Center;
+  transition:0.4s;
 }
 
-           
-div{
-    margin-left:auto;
-    margin-right:auto;
-    color: #7eddd3;
-   }
-   
-section{
+p:hover{
   color: #7eddd3;
-}
+ }
+ 
 a{
     color:#e3e6eb;
     transition:0.4s;
@@ -67,18 +90,37 @@ a{
   color: #7eddd3;
  }
  
+button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid;
+  border-color: #7eddd3;
+  background-color: transparent;
+  color: #e3e6eb;
+  transition:0.4s;
+  width: auto;
+}
+
+button:hover{
+  border-color: #2d2e30;
+  color: #2d2e30;
+  background-color: #e3e6eb;
+  width: 110px;
+}
+
  img{
-    max-width:400px;
-    max-height:400px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: auto;
-    height: auto;
-    display: block;
-    border: transparent;
-    border-radius: 15px;
-   }
+  max-width:400px;
+  max-height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  border: transparent;
+  border-radius: 15px;
+}
    
 
 @media only screen and (max-width: 600px){
@@ -100,22 +142,4 @@ a{
     }
 
 
-@keyframes fadedown {
-        0% {
-          transform: translateY(-1%);
-        }
-        100% {
-          transform: translateY(0);
-        }
-    }
- 
-div:nth-child(1){
-    animation: 1s ease-out 0s 1 fadedown;
-}
-div:nth-child(2){
-    animation: 1s ease-out 0s 1 fadedown;
-}
-div:nth-child(3){
-    animation: 1s ease-out 0s 1 fadedown;
-}
                

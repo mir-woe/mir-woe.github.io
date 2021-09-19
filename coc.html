@@ -51,6 +51,7 @@
  margin-left: auto;
  margin-right: auto;
  width:100%;
+ padding: 1em;
 }
 
 #coc {
@@ -79,10 +80,7 @@
  margin-right: auto;
  position: relative;
  overflow: hidden;
-    
-    }
-
-
+}
 </style>
 
 
@@ -96,11 +94,23 @@
     <p> Anyways... this page is currrently under<strong> construcution </strong>it will be back momentarily</p> 
 
  <div id="hlep">
-   <p> <a href="index.html"> ¦return¦ </a></p>
- </div>
-<div class="iii"><img src="images/misc/cocit.gif"/></div>
-<br>
- </div>
+
+   <button onclick="goBack()"> return </button>
+
+</div>
+
+<div class="iii">
+
+   <img src="images/misc/cocit.gif"/>
+
+</div>
 
 </body> 
-    </html>
+
+<script>
+   function goBack() {
+     window.history.back();
+   }
+</script>
+
+</html>
