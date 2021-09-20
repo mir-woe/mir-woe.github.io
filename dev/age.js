@@ -2,7 +2,7 @@ function ccc(){
     var now = new Date();
     var eventDate = new Date(new Date().getFullYear(), 10, 4);
 
-    currentYear = new Date(new Date().getFullYear())
+    var currentYear = new Date(new Date().getFullYear());
 
     var currentTiime = now.getTime();
     var eventTime = eventDate.getTime();

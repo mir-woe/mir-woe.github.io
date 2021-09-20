@@ -4,6 +4,7 @@
 body{
     background:#2d2e30;
     padding: unset;
+    padding-bottom: 35px;
     margin:unset;
     -webkit-touch-callout: none;
          -webkit-user-select: none;
@@ -82,8 +83,9 @@ p:hover{
  }
  
 a{
-    color:#e3e6eb;
-    transition:0.4s;
+  font-family: 'Noto Sans', sans-serif;
+  color:#e3e6eb;
+  transition:0.4s;
  }
   
  a:hover{
@@ -121,25 +123,98 @@ button:hover{
   border: transparent;
   border-radius: 15px;
 }
-   
+  
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #252627;
+  position: fixed;
+  bottom: 0%;
+  text-align: center; 
+}
+
+     
+footer button{
+  border:none !important;
+  display: none;
+}
+
+
+footer p{
+  padding: 10px;
+  font-size: 10px !important;
+  margin: unset !important;
+  width: auto;
+}
 
 @media only screen and (max-width: 600px){
 
-    p{    
-     font-size: calc(16px + 6 * ((100vw - 320px) / 680))
-        }
+p{    
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680))
+}
         
-    img{
-     max-width: 100%; 
-     max-height: 100%;
-        }}
+img{
+  max-width: 100%; 
+  max-height: 100%;
+}
     
+#noshow{
+  display: none;
+}
+}
+   
+
+
 @media only screen and (min-width: 600px){
 
-    p{    
-     font-size: calc(16px + 6 * ((100vw - 320px) / 100000)) !important
-        }
-    }
+p{    
+  font-size: calc(16px + 6 * ((100vw - 320px) / 100000)) !important
+}
+
+   
+#noshow{
+  display: block !important;
+}
+    
+footer button{
+  display: none !important;
+}
+
+footer #rightist{
+  text-align: right;
+  float: right;
+}
+footer #leftist{
+  float: left;
+  text-align: left;
+}
+
+.penis{
+  border-bottom: solid;
+  border-bottom-color: #7eddd3;
+  height: fit-content;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.pp p, a{
+  margin-top: unset;
+  margin-bottom: unset;
+  margin-right: auto;
+  margin-left: auto;
+  padding: auto;
+  font-size: calc(20px + 6 * ((100vw - 320px) / 100000));
+}
+
+#lost{
+  font-size: calc(10px + 6 * ((100vw - 300px) / 100000)) !important ;
+  margin: auto !important;
+}
+
+}
 
 
                
