@@ -4,6 +4,7 @@
 body{
     background:#2d2e30;
     padding: unset;
+    padding-top: 100px;
     padding-bottom: 35px;
     margin:unset;
     -webkit-touch-callout: none;
@@ -124,6 +125,11 @@ button:hover{
   border-radius: 15px;
 }
   
+header{
+  position: absolute;
+  top:0%;
+  width: 100%;
+}
 
 footer{
   width: 100%;
@@ -148,6 +154,13 @@ footer p{
   width: auto;
 }
 
+#logo{
+  font-size: 63px !important;
+  color:#7eddd3;
+  margin: 0px;
+}
+
+
 @media only screen and (max-width: 600px){
 
 p{    
@@ -162,9 +175,20 @@ img{
 #noshow{
   display: none;
 }
+#descheadingnav{
+  display: none;
+}
+
+#logo{
+  text-align: center; 
+  width: 100%; 
+}
+
+.penis{
+  width:100% !important;
+}
 }
    
-
 
 @media only screen and (min-width: 600px){
 
@@ -184,20 +208,11 @@ footer button{
 footer #rightist{
   text-align: right;
   float: right;
+  font-size: 10px !important;
 }
 footer #leftist{
   float: left;
   text-align: left;
-}
-
-.penis{
-  border-bottom: solid;
-  border-bottom-color: #7eddd3;
-  height: fit-content;
-  width: auto;
-  padding: 10px;
-  display: flex;
-  position: relative;
 }
 
 .pp p, a{
@@ -214,7 +229,12 @@ footer #leftist{
   margin: auto !important;
 }
 
+#logo{
+  text-align: left;
+  padding-left: 10px;  
+}
 }
 
 
                
+/* 600 - 815 */
