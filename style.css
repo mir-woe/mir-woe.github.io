@@ -30,10 +30,6 @@ div{
   color: #7eddd3;
  }
  
-section{
-  color: #7eddd3;
-}
-
 div:nth-child(1){
   animation: 1s ease-out 0s 1 fadedown;
 }
@@ -44,6 +40,45 @@ div:nth-child(3){
   animation: 1s ease-out 0s 1 fadedown;
 }
 
+section{
+  color: #7eddd3;
+}
+
+header{
+  position: absolute;
+  top:0%;
+  width: 100%;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #252627;
+  position: fixed;
+  bottom: 0%;
+  text-align: center; 
+}
+
+footer div{
+  border:none !important;
+  display: none;
+}
+
+footer button{
+  border:none !important;
+  width: auto !important;
+}
+
+footer p{
+  padding: 10px;
+  font-size: 10px !important;
+  margin: unset !important;
+  width: auto;
+}
+
+footer #rightist{
+  font-size: 10px;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -51,7 +86,6 @@ div:nth-child(3){
   height: 5px;
 }
 
-  
 /* Track */
 ::-webkit-scrollbar-track {
   background: #2d2e30; 
@@ -69,9 +103,20 @@ div:nth-child(3){
   height: 10px;
 }
 
+img{
+  max-width:400px;
+  max-height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  border: transparent;
+  border-radius: 15px;
+}
 
-
-p{
+p, a{
   font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   color:#e3e6eb;
   font-family: 'Noto Sans', sans-serif;
@@ -79,17 +124,7 @@ p{
   transition:0.4s;
 }
 
-p:hover{
-  color: #7eddd3;
- }
- 
-a{
-  font-family: 'Noto Sans', sans-serif;
-  color:#e3e6eb;
-  transition:0.4s;
- }
-  
- a:hover{
+p:hover, a:hover{
   color: #7eddd3;
  }
  
@@ -112,54 +147,19 @@ button:hover{
   width: 110px;
 }
 
- img{
-  max-width:400px;
-  max-height:400px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: auto;
-  height: auto;
-  display: block;
-  border: transparent;
-  border-radius: 15px;
-}
-  
-header{
-  position: absolute;
-  top:0%;
-  width: 100%;
-}
-
-footer{
-  width: 100%;
-  height: auto;
-  background-color: #252627;
-  position: fixed;
-  bottom: 0%;
-  text-align: center; 
-}
-
-     
-footer button{
-  border:none !important;
-  display: none;
-}
-
-
-footer p{
-  padding: 10px;
-  font-size: 10px !important;
-  margin: unset !important;
-  width: auto;
-}
-
 #logo{
   font-size: 63px !important;
   color:#7eddd3;
   margin: 0px;
 }
 
+#tabheadingnav-popup{
+  display: none;
+  position: fixed;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-color: #2d2e30;
+}
 
 @media only screen and (max-width: 600px){
 
@@ -172,10 +172,7 @@ img{
   max-height: 100%;
 }
     
-#noshow{
-  display: none;
-}
-#descheadingnav{
+#noshow, #descheadingnav{
   display: none;
 }
 
@@ -187,6 +184,10 @@ img{
 .penis{
   width:100% !important;
 }
+
+#tabheadingnav{
+  display: none !important;
+}
 }
    
 
@@ -195,46 +196,77 @@ img{
 p{    
   font-size: calc(16px + 6 * ((100vw - 320px) / 100000)) !important
 }
+      
+  footer button{
+    display: none !important;
+  }
 
-   
-#noshow{
-  display: block !important;
-}
-    
-footer button{
-  display: none !important;
-}
+  footer #rightist{
+    text-align: right;
+    float: right;
 
-footer #rightist{
-  text-align: right;
-  float: right;
-  font-size: 10px !important;
-}
-footer #leftist{
-  float: left;
-  text-align: left;
-}
+  }
+  footer #leftist{
+    float: left;
+    text-align: left;
+  }
 
-.pp p, a{
-  margin-top: unset;
-  margin-bottom: unset;
-  margin-right: auto;
-  margin-left: auto;
-  padding: auto;
-  font-size: calc(20px + 6 * ((100vw - 320px) / 100000));
-}
+  .pp p, .pp a{
+    margin-top: unset;
+    margin-bottom: unset;
+    margin-right: auto;
+    margin-left: auto;
+    padding: auto;
+    font-size: calc(20px + 6 * ((100vw - 320px) / 100000));
+  } 
 
-#lost{
-  font-size: calc(10px + 6 * ((100vw - 300px) / 100000)) !important ;
-  margin: auto !important;
-}
+  #noshow{
+    display: block !important;
+  }
 
-#logo{
-  text-align: left;
-  padding-left: 10px;  
-}
+  #lost{
+    font-size: calc(10px + 6 * ((100vw - 300px) / 100000)) !important ;
+    margin: auto !important;
+  }
+
+  #logo{
+    text-align: left;
+    padding-left: 15px;  
+  }
+  #tabheadingnav{
+    display: none;
+  }
 }
 
 
-               
-/* 600 - 815 */
+
+@media only screen and (max-width: 877px){
+  #noshow, #descheadingnav{
+    display: none;
+  }
+  #tabheadingnav{
+    display: block;
+  }
+  
+  #tabheadingnav button{
+    position: absolute;
+    right: 0;
+    margin-top: 24px;
+    width: auto;
+    border-radius: unset;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  #logo{
+    text-align: center;
+    padding: 0;  
+    width: 100%;
+  }
+
+  .penis{
+    width: 100% !important;
+  }
+  
+}
