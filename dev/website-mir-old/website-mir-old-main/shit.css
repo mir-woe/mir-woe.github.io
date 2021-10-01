@@ -1,0 +1,210 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.insomnia{
+ padding:auto;
+ margin:40px 0px 40px 0px;
+ height: 22px;
+ border-bottom: 1px solid transparent;
+ transition: border-bottom 0.5s;
+}
+
+.currentpage {
+ border-bottom: 1px solid #49b675;
+ text-transform: uppercase;
+}
+
+.currentpage a {
+ color: #49b675 !important;
+}
+
+.insomnia a {
+ color: white;
+ text-decoration: none;
+ transition: color 0.5s;
+}
+
+.insomnia:hover {
+ border-bottom: 1px solid #49b675;
+}
+
+.insomnia a:hover {
+ color: #49b675;
+}
+
+.rightboop p: {
+ color:white;
+    }
+.rightboop p:hover {
+ transition: color 0.5s;
+ color: #49b675;
+}
+
+
+@-webkit-keyframes lkd {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+         
+@keyframes lkd {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}       
+
+body{
+ color: transparent;
+ background: linear-gradient(2deg, green, #010b13, #080808, black);
+ background-size: 600% 150%;
+ animation: lkd 30s ease infinite;}
+
+
+@media only screen and (max-width: 2000px) {
+#dandruff {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animStar 50s linear infinite;
+    box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
+    1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
+    36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
+    1448px 1157px #fff, 1084px 232px #fff, 347px 1776px #fff, 1722px 243px #fff,
+    1629px 835px #fff, 479px 969px #fff, 1231px 960px #fff, 586px 384px #fff,
+    164px 527px #fff, 8px 646px #fff, 1150px 1126px #fff, 665px 1357px #fff,
+    1556px 1982px #fff, 1260px 1961px #fff, 1675px 1741px #fff,
+    1843px 1514px #fff, 718px 1628px #fff, 242px 1343px #fff, 1497px 1880px #fff,
+    1364px 230px #fff, 1739px 1302px #fff, 636px 959px #fff, 304px 686px #fff,
+    1669px 246px #fff, 1925px 322px #fff, 1154px 1803px #fff, 1929px 295px #fff,
+    899px 641px #fff, 1909px 1949px #fff, 1311px 964px #fff, 979px 1301px #fff,
+    1393px 969px #fff, 1793px 1886px #fff, 292px 357px #fff, 1196px 1718px #fff,
+    1290px 1994px #fff, 537px 1973px #fff, 1181px 1674px #fff,
+    1740px 1566px #fff, 1307px 265px #fff, 922px 522px #fff, 1892px 472px #fff,
+    1257px 99px #fff, 1395px 1498px #fff, 1117px 252px #fff, 1779px 597px #fff,
+    1346px 729px #fff, 1108px 1144px #fff, 402px 691px #fff, 72px 496px #fff,
+    1673px 1604px #fff, 1497px 974px #fff, 1865px 1664px #fff, 88px 806px #fff,
+    918px 77px #fff, 244px 1118px #fff, 256px 1820px #fff, 1851px 1840px #fff,
+    605px 1851px #fff, 634px 383px #fff, 865px 37px #fff, 943px 1024px #fff,
+    1951px 177px #fff, 1097px 523px #fff, 985px 1700px #fff, 1243px 122px #fff,
+    768px 1070px #fff, 468px 194px #fff, 320px 1867px #fff, 1850px 185px #fff,
+    380px 1616px #fff, 468px 1294px #fff, 1122px 1743px #fff, 884px 299px #fff,
+    1300px 1917px #fff, 1860px 396px #fff, 1270px 990px #fff, 529px 733px #fff,
+    1975px 1347px #fff, 1885px 685px #fff, 226px 506px #fff, 651px 878px #fff,
+    1323px 680px #fff, 1284px 680px #fff, 238px 1967px #fff, 911px 174px #fff,
+    1111px 521px #fff, 1150px 85px #fff, 794px 502px #fff, 484px 1856px #fff,
+    1809px 368px #fff, 112px 953px #fff, 590px 1009px #fff, 1655px 311px #fff,
+    100px 1026px #fff, 1803px 352px #fff, 865px 306px #fff, 1077px 1019px #fff,
+    1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
+    659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
+    696px 1654px #fff, 1144px 60px #fff;
+}
+
+#cloutedcum {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    animation: animStar 100s linear infinite;
+    box-shadow: 1448px 320px #49b675, 1775px 1663px green, 332px 1364px #49b675,
+    878px 340px #49b675, 569px 1832px green, 1422px 1684px #49b675, 1946px 1907px green,
+    121px 979px #49b675, 1044px 1069px green, 463px 381px #49b675, 423px 112px #49b675,
+    523px 1179px #49b675, 779px 654px #49b675, 1398px 694px #49b675, 1085px 1464px #49b675,
+    1599px 1869px green, 801px 1882px #49b675, 779px 1231px #49b675, 552px 932px green,
+    1057px 1196px #49b675, 282px 1280px green, 496px 1986px #49b675, 1833px 1120px #49b675,
+    1802px 1293px green, 6px 1696px green, 412px 1902px green, 605px 438px green,
+    24px 1212px #49b675, 234px 1320px #49b675, 544px 344px #49b675, 1107px 170px #49b675,
+    1603px 196px #49b675, 905px 648px #49b675, 68px 1458px green, 649px 1969px green,
+    744px 675px green, 1127px 478px #49b675, 714px 1814px green, 1486px 526px #49b675,
+    270px 1636px green, 1931px 149px #49b675, 1807px 378px #49b675, 8px 390px green,
+    1415px 699px #49b675, 1473px 1211px #49b675, 1590px 141px #49b675, 270px 1705px #49b675,
+    1177px 699px #49b675, 1244px 1244px green, 1371px 58px green, 564px 1515px #49b675;
+}
+   }
+
+
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+
+
+
+.unfortnuante-navigatiobefvg{
+   width:10%; height:-webkit-fill-available; background:#222327; padding-left:5px; border-radius:5px; margin:auto;
+
+   }
+
+widgetbot{
+   width:90%; height:600;
+   }
+
+.ganggang{
+   width:80%; height:600; display:flex; margin:auto; position:relative; z-index:10; 
+   }
+
+   p{color:white;}
+
+
+
+.pp {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: pp 1s ease-in-out infinite alternate;
+  -moz-animation: pp 1s ease-in-out infinite alternate;
+  animation: pp 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #49b675, 0 0 16px #49b675, 0 0 20px #49b675, 0 0 24px #49b675, 0 0 28px #49b675;
+}
+
+.ccc{
+    border: solid;
+    border-color: #3a8f5e;
+    border-radius: 10px;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background:#222327;
+   box-shadow: 0 0 22px 10px  #49b675;}
+
+
+
+@media only screen and (max-width: 600px) {
+widgetbot {
+ width: 100%;
+}
+
+.rightboop {
+ display:none;
+}
+
+.insomnia {
+ margin: auto;
+ margin-top: 6px;
+ margin-bottom: 6px;   
+}
+
+.unfortnuante-navigatiobefvg {
+ width: auto;
+ display: flex;
+ margin: auto;
+}
+
+.ganggang {
+ width: -webkit-fill-available;
+ display: flex;
+ margin: auto;
+ }
+
+.ccc {
+ display: block;
+ height: fit-content;
+ width: 100%;
+}
+}

@@ -1,0 +1,427 @@
+body {
+ background-color:#070808;
+ padding:0;
+ margin:0;
+ font-family: 'Arvo', serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+p {
+ text-align: Center;
+}
+
+
+
+
+
+.newe{
+  display: grid;
+  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 38px;
+  padding-right: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.r{
+  display:flex;
+}
+    
+.newe > .r > div {
+  font-size: 30px;
+  color: white ;
+  text-align: Center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+    
+.newe > .l > div {
+  color: white ;
+  text-align: Center;
+}
+
+
+
+
+
+
+
+
+
+
+
+button{
+  border:2px solid;
+  background-color:transparent;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Arvo', serif;
+  font-size: 15px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.4s;
+  height:40px;
+  float: center;  
+}
+
+.buttontype1{
+  width:25%;
+
+}
+
+.buttontype2.buttontype3{
+  width:100px;
+}
+
+.buttontype1:hover{
+  background-color: #FFFFFF ;
+  color: #070808;
+  text-decoration: underline overline;
+  text-decoration-color: black;
+}
+
+.buttontype2:hover{
+  background-color: #FFFFFF;
+  color: orange;
+  text-decoration: underline overline;
+  text-decoration-color: orange;
+}
+
+.buttontype3:hover{
+  background-color: #FFFFFF;
+  color: #8989e0;
+  text-decoration: underline overline;
+  text-decoration-color: #8989e0;
+}
+
+.buttontype4{
+  color: #2e3642;
+  padding: 8px;
+  margin-top:10px;
+  margin-left:10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition:0.4s;
+  height:40px;
+  width: ;
+}
+
+.buttontype4:hover{
+  background-color: #2e3642;
+  color: #d9e9ff;
+  text-decoration: underline overline;
+  text-decoration-color: #d9e9ff;
+  height:40px;
+  width: ;
+}
+
+
+
+
+
+
+
+
+
+.monkay {
+ text-align: center;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+
+
+
+
+
+.kk{
+ width: 95%;
+ height: 300px;
+ float: both;
+ text-align: center;
+ border:solid;
+ border-color:white;
+ border-radius:10px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+.kik{
+ width: 95%;
+ height:;
+ float: both;
+ text-align: left;
+ border:solid;
+ border-color:white;
+ border-radius:10px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top:10px;
+ margin-bottom:10px;
+ border:solid;
+ border-color:black;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes uwu {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+         
+@keyframes uwu {
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}       
+
+
+
+#box2{  
+ background: linear-gradient(130deg, #6c6cd8, #8989e0, #b2b2fe);
+ background-size: 400% 600%;
+ animation: uwu 60s ease infinite;
+}
+
+#box3{  
+ background: linear-gradient(130deg, #fbaf75, #fe8e39, #f25d5d);
+ background-size: 400% 600%;
+ animation: uwu 60s ease infinite;
+}
+
+
+@media screen and (min-width: 1080px) {
+#box2 {
+width: 47.5%;
+float: left;
+margin-left: 1%;
+margin-right:0;
+padding-right:0; 
+}
+
+#box3 {
+width: 47.5%;
+float: right;
+margin-right: 1%;
+margin-left: 0;
+padding-left:0;
+}
+}
+
+#box4{    
+ background-image: url('https://cdn.discordapp.com/attachments/708603612502425692/733679546070728804/unknown.png');
+ float: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+ border-color:black;    
+}
+
+
+
+
+
+
+
+
+
+#sameshitdifferentname{
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+  border: transparent;
+  border-radius:10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+#sameshitdifferentname{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+    }
+}
+
+
+
+
+
+
+table{
+ margin:auto;
+        }
+
+td{           
+ padding:10px 2px 10px 1px;
+        }
+
+tr{
+ transform: translateY(10px);
+ opacity: 0;
+ animation: rows 0.5s forwards;
+        }
+
+img{
+ max-width:400px;
+ max-height:400px;
+ width: auto;
+ height: auto;
+ border-radius: 5px;}
+
+
+@media only screen and (max-width: 600px){
+            
+table{
+ width:100%;               
+ padding:1px;
+      }
+td{
+ padding:10px 1px 10px 1px;
+   }
+img{
+ max-width: 100%; 
+ max-height: 100%;
+    }
+#titles{
+ width:auto;
+ padding-left:4px;
+}
+.images{
+ padding:0;
+}}
+         
+         
+@keyframes rows{
+ from{transform: translateY(10px);}
+ to{transform: translateY(0px); opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.insomnia{
+ padding:auto;
+ margin:40px 0px 40px 0px;
+ height: 22px;
+ border-bottom: 1px solid transparent;
+ transition: border-bottom 0.5s;
+}
+
+.currentpage {
+ border-bottom: 1px solid #2f4f4f;
+ text-transform: uppercase;
+}
+
+.currentpage a {
+ color: #2f4f4f !important;
+}
+
+.insomnia a {
+ color: white;
+ text-decoration: none;
+ transition: color 0.5s;
+}
+
+.insomnia:hover {
+ border-bottom: 1px solid #2f4f4f;
+}
+
+.insomnia a:hover {
+ color: #2f4f4f;
+}
+
+.rightboop p: {
+ color:white;
+    }
+.rightboop p:hover {
+ transition: color 0.5s;
+ color: #2f4f4f;
+}
+
+.poi   {
+ color: white;
+ margin: auto;
+ padding: auto;
+ height: -webkit-fill-available;
+ z-index: 20;
+}
+.poi:hover   {
+ color: #6b7cc1;
+ height: -webkit-fill-available;
+}
+   
+.qoi   {
+ color: white;
+ margin: auto;
+ padding: auto;
+ height: -webkit-fill-available;
+ z-index: 20;
+ display:none;
+}
+.qoi:hover   {
+ color: #6b7cc1;
+ height: -webkit-fill-available;
+}
+
+
+.shinigami {
+ width: auto;
+ height: auto;
+ margin: auto;
+ margin-top: 15%;
+ text-align:centre;
+ transition:1s;
+ z-index:123;
+ display:none;
+    }
+
+.shinigami:hover {
+ border:none;
+ background-color:  #a178b4 ;
+ color:  #fff;
+ text-decoration: underline overline;
+ text-decoration-color: #fff;
+    }
+    
+    
+    
+    
+    
+    
+    
+@media only screen and (max-width: 600px){
+
+    
+.shinigami{ 
+ margin-top:0px;
+    }
+    }
