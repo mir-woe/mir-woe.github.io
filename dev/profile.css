@@ -4,6 +4,16 @@
    display:flex;
 }
 
+#agebutton{
+   padding:0 10 0 10;
+   margin: 0;
+   width: auto !important;
+}
+
+#agebutton:hover{
+   width: auto !important;
+}
+
 #redc img{
     margin:10px;
 }
@@ -69,7 +79,18 @@
    color: #7eddd3 !important;
 }
 
-
+#birthday{
+   border:solid;
+   display: none;
+   border-radius: 10px;
+   height: 50%;
+   position: absolute;
+   z-index: 10;
+   padding-bottom: 10px;
+   border-bottom: solid;
+   width: -webkit-fill-available;
+   background-color: #2d2e30;
+}
 
 
 @media only screen and (max-width: 768px){

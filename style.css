@@ -155,12 +155,15 @@ button:hover{
 
 #tabheadingnav-popup{
   display: none;
-  position: fixed;
+  position: absolute;
+  padding-bottom: 10px;
+  border-bottom: solid;
   width: -webkit-fill-available;
-  height: -webkit-fill-available;
   background-color: #2d2e30;
 }
-
+#tabheadingnav-popup button{
+  width: 140px !important;
+}
 @media only screen and (max-width: 600px){
 
 p{    
