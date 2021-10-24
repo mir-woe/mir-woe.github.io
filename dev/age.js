@@ -50,5 +50,13 @@ function ccc(){
 
     setTimeout(ccc, 1000);
 }
-
 ccc();
+
+
+function showagebutton(){
+    document.getElementById("birthday").style.display = "inline-grid";
+}
+
+function hideagebutton(){
+    document.getElementById("birthday").style.display = "none";
+}

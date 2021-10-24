@@ -1,3 +1,6 @@
+@import url('../style.css');
+
+
 #redc{
    overflow-y: hidden;
    overflow-x: scroll;
@@ -70,27 +73,39 @@
    margin-right: auto;
    margin-bottom: unset;
    margin-top: unset;
+   -webkit-touch-callout:text;
+   -webkit-user-select: text;
+   -khtml-user-select: text;
+   -moz-user-select: text;
+   -ms-user-select: text;
+   user-select: text;
 }
 
-.lmaolmao{
-   margin:10px;
-   border-bottom:solid;
-   overflow:hidden;
-   color: #7eddd3 !important;
-}
 
 #birthday{
-   border:solid;
-   display: none;
-   border-radius: 10px;
-   height: 50%;
-   position: absolute;
+   position:fixed;
+   top: 50%;
+   left: 50%; 
+   transform:translateX(-50%) translateY(-50%); 
+   transition: 0s;
    z-index: 10;
-   padding-bottom: 10px;
-   border-bottom: solid;
-   width: -webkit-fill-available;
-   background-color: #2d2e30;
+   display: none;
+   height: auto;
+   width: 60%;
+   border:solid;
+   border-radius: 10px;
+   box-shadow: 0 0 0px 0px , 70px -60px 100px black, 70px 60px 100px black, -70px 60px 100px black, -70px -60px 100px black; 
+   background-color: var(--bg1);
 }
+
+#birthday button{
+   padding: 0px 10px 0px 10px;
+}
+
+#birthday button:hover{
+   width:auto;
+}
+
 
 
 @media only screen and (max-width: 768px){
@@ -115,5 +130,22 @@
  width:100%;
  position:relative;
     }
+
+#birthday{
+   width: 90%;
+}
+
+#birthday div, #birthday a{
+   display: contents;
+   text-decoration: none;
+}
+
+#birthday button{
+   padding: 10px;
+   border-right:none;
+   border-left: none;
+   border-radius: 0;
+   margin: 10 10 0 10;
+}
 }
 

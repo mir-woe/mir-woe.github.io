@@ -95,7 +95,7 @@ body{
 </style>
 
 
-<section style="border-bottom:solid #7eddd3;" class="pp"> <p style="font-size:100px !important;border-bottom:solid #7eddd3;margin:0px; color:#7eddd3;"> M·I·R </p> </section>
+<section style="border-bottom:solid #7eddd3;" class="pp"> <p style="font-size:70px !important;border-bottom:solid #7eddd3;margin:0px; color:#7eddd3;"> woe. </p> </section>
 
  <div id="coc">
 
@@ -107,7 +107,7 @@ body{
 
  <div id="hlep">
 
-   <button onclick="goBack()"> return </button>
+   <button onclick="lost()"> lost? </button> </button><button onclick="back()"> return </button>
 
 </div>
 
@@ -120,8 +120,11 @@ body{
 </body> 
 
 <script>
-   function goBack() {
+   function back() {
      window.history.back();
+   }
+   function lost() {
+      window.location.href = "lost.html";
    }
 </script>
 
