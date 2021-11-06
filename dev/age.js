@@ -12,7 +12,8 @@ function ccc(){
     if(remTime > 1){
         var s = Math.floor(remTime / 1000);
         var y = Math.floor(currentYear - 2004 - 1);
-        }
+        var y2 = Math.floor(y + 1);
+    }
 
 
     if(remTime < -1){
@@ -26,7 +27,8 @@ function ccc(){
         var newremTime = eventTime - currentTiime;
         var s = Math.floor(newremTime / 1000);
         var y = Math.floor(currentYear - 2004);
-} 		
+        var y2 = Math.floor(y + 1);          
+    } 		
 
     
     var m = Math.floor(s / 60);
@@ -41,13 +43,26 @@ function ccc(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
+try{
     document.getElementById("dayss").textContent = d;
     document.getElementById("hourss").textContent = h;
     document.getElementById("minutess").textContent = m;
     document.getElementById("secondss").textContent = s;
-    
-    document.getElementById("age").textContent = y;
+}catch (err) {
+    console.log(err.message);
+}
 
+try{
+    document.getElementById("age").textContent = y;
+}catch (err) {
+    console.log(err.message);
+}
+
+try{
+    document.getElementById("newage").textContent = y2;
+}catch (err) {
+        console.log(err.message);
+}
     setTimeout(ccc, 1000);
 }
 ccc();
