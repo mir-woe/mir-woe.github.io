@@ -670,12 +670,12 @@
         transform: scale(0.65);
         transform-origin: 0px 4px;
     }
-    .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(2) {
+    /* .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(2) {
         fill: transparent;
     }
     .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(3) {
         fill: transparent;
-    }
+    } */
     .children-3rEycc>div[aria-label*="Edit Channel"]>svg>path {
         transform: scale(0.672);
         transform-origin: 0px 4px;
