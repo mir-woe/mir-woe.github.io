@@ -85,9 +85,9 @@
         --background-modifier-active: var(--ikhlas2-hover) !important;
         --background-modifier-selected: var(--ikhlas2-hover) !important;
         --background-modifier-accent: var(--ikhlas3) !important;
-        --scrollbar-thin-thumb: var(--ikhlas3-hover) !important;
+        --scrollbar-thin-thumb: var(--ikhlas-hover) !important;
         --scrollbar-thin-track: transparent !important;
-        --scrollbar-auto-thumb:var(--ikhlas5) !important;
+        --scrollbar-auto-thumb:var(--ikhlas2) !important;
         --scrollbar-auto-track: var(--ikhlas3-hover) !important;
         --elevation-stroke: 0 0 0 1px var(--ikhlas2-hover) !important;
         --elevation-low: 0 1px 0 var(--ikhlas2-hover) !important;
@@ -570,8 +570,13 @@
     
     .powercord-entities-manage-search input{
         margin-bottom: 15px;
+        background-color: var(--ikhlas1) !important;
     }
 
+    .powercord-product {
+        background-color: var(--ikhlas1) !important;
+        border: 1px solid var(--deprecated-text-input-border);
+    }
     /*  */
     
     .root-1gCeng {
