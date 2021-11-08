@@ -151,6 +151,11 @@
         color: var(--ikhlas4);
     }
     
+    /* text input */
+    .inputDefault-_djjkz{
+        background-color: var(--ikhlas1);
+    }
+    
     /* light mode work arounds */
     /* div > .title-3BE6m5:before{
         display: none;
