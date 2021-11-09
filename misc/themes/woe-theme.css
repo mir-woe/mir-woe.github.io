@@ -570,13 +570,13 @@
         -webkit-transition: background-color .17s ease,color .17s ease;
         transition: background-color .17s ease,color .17s ease;
     }
-    
+
     .powercord-entities-manage-search input{
         margin-bottom: 15px;
         background-color: var(--ikhlas1) !important;
     }
 
-    .powercord-product, .modal-yWgWj- {
+    .powercord-product, .modal-yWgWj-, .powercord-toast, .powercord-toast .contents, .powercord-toast .contents .inner {
         background-color: var(--ikhlas1) !important;
         border: 1px solid var(--deprecated-text-input-border);
     }
@@ -1271,6 +1271,9 @@
     /* Boost Server */
     .headerLogo--hLLAk > g > path {
         fill: var(--ikhlas4) !important;
+    }
+    .iconTierThree-1dzVP7{
+        color: var(--ikhlas4);
     }
     .tier-2pEkRl {
         border: 1px solid var(--ikhlas3-hover);
