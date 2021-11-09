@@ -1355,9 +1355,14 @@
     }
     
     /* Connections */
-    .connection-1fbD7X {
+    .connection-1fbD7X, .accountList-33MS45, .connectedAccount-2Jb-Z0 {
         border: 1px solid var(--ikhlas3-hover) !important;
+        transition: 0.4s;
     }
+    .connectedAccount-2Jb-Z0:hover {
+        background-color: var(--ikhlas2-hover);
+        }
+
     .connectionHeader-2MDqhu {
         border-bottom: 1px solid var(--ikhlas3-hover) !important;
     }
