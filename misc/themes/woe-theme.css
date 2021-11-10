@@ -691,20 +691,6 @@
         display: block !important;
     }
     
-    .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(1) {
-        transform: scale(0.65);
-        transform-origin: 0px 4px;
-    }
-    /* .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(2) {
-        fill: transparent;
-    }
-    .children-3rEycc>div[aria-label*="Create Invite"]>svg>path:nth-child(3) {
-        fill: transparent;
-    } */
-    .children-3rEycc>div[aria-label*="Edit Channel"]>svg>path {
-        transform: scale(0.672);
-        transform-origin: 0px 4px;
-    }
     
     /* auto complete */
     .contentTitle-2tG_sM,   .colorInteractiveActive-3Ip9Eu{
@@ -800,7 +786,6 @@
     .scrollableContainer-2NUZem:active, .uploadModal-2ifh8j .inner-3nWsbo .channelTextAreaUpload-3t7EIx .scrollableContainer-2NUZem:active {
         border: 1px solid var(--ikhlas2) !important;
     }
-    
     
     .channelTextArea-2VhZ6z, .channelTextArea-rNsIhG{
         border-radius: 23px;
