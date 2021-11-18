@@ -811,7 +811,7 @@
     #app-mount .lookOutlined-3sRXeN.colorGreen-29iAKY {
         color: var(--ikhlas2) !important;
         border-color: var(--ikhlas2) !important;
-        border-radius: 23px;
+        border-radius: 6px;
     }
     .inviteRow-2L02ae {
         margin-right: 0;
@@ -1274,7 +1274,7 @@
         color: var(--ikhlas4);
     }
     .lookFilled-1Gx00P.colorBrand-3pXr91, .lookFilled-1Gx00P.colorBrandNew-g5lmBU {
-        border-radius: 23px;
+        border-radius: 6px;
     }
     .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .lookFilled-1Gx00P.colorTransparent-1ewNp9 {
         background-color: var(--background-modifier-selected) !important;
