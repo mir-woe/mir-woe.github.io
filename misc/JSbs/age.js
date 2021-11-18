@@ -1,4 +1,5 @@
 function ccc(){
+
     var now = new Date();
     var eventDate = new Date(new Date().getFullYear(), 10, 4);
 
@@ -14,7 +15,6 @@ function ccc(){
         var y = Math.floor(currentYear - 2004 - 1);
         var y2 = Math.floor(y + 1);
     }
-
 
     if(remTime < -1){
     
@@ -43,28 +43,53 @@ function ccc(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-try{
-    document.getElementById("dayss").textContent = d;
-    document.getElementById("hourss").textContent = h;
-    document.getElementById("minutess").textContent = m;
-    document.getElementById("secondss").textContent = s;
-}catch (err) {
-    console.log(err.message);
-}
+    var IDs = {
+        dayss : d,
+        hourss : h,
+        minutess : m,
+        secondss : s,
+        age : y,
+        newage : y2,
+        dob : "november 4th 2004", 
+        dob2 : "nov 4th 2004", 
+        dob3 : "4/11/2004", 
+    };
 
-try{
-    document.getElementById("age").textContent = y;
-}catch (err) {
-    console.log(err.message);
-}
+    for (var value in IDs) {
+        try{
+            if (IDs.hasOwnProperty(value)) {
+                document.getElementById(value).textContent = IDs[value];
+            }
+        } catch (err){
+            console.log(err)
+        }
+    }
 
-try{
-    document.getElementById("newage").textContent = y2;
-}catch (err) {
-        console.log(err.message);
-}
+
+// try{
+//     document.getElementById("dayss").textContent = d;
+//     document.getElementById("hourss").textContent = h;
+//     document.getElementById("minutess").textContent = m;
+//     document.getElementById("secondss").textContent = s;
+// }catch (err) {
+//     console.log(err.message);
+// }
+
+// try{
+//     document.getElementById("age").textContent = y;
+// }catch (err) {
+//     console.log(err.message);
+// }
+
+// try{
+//     document.getElementById("newage").textContent = y2;
+// }catch (err) {
+//         console.log(err.message);
+// }
+
     setTimeout(ccc, 1000);
 }
+
 ccc();
 
 

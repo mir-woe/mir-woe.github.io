@@ -1,5 +1,5 @@
 
-var myText = "Hello! Welcome to my website!";
+var myText = "Hello! And welcome.";
 var myArray = myText.split("");
 var speed = 80;
 var loopTimer;

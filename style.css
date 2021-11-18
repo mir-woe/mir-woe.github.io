@@ -36,13 +36,18 @@ body{
     transform: translateY(0);
   }
 }
-      
+
+.PageContentEncompass{
+  width:67%; 
+  margin:auto;
+}
+
 .note{
  border:solid var(--red2);
  background-color: var(--red1);
  border-radius: 10px;
  color: var(--bg1);
- width:90%;
+ width:97%;
  margin-left: auto;
  margin-right: auto;
 }
@@ -70,6 +75,24 @@ body{
         </ol>
     </section>
      */
+
+
+.child{    
+  border: solid;
+  border-radius: 5px;
+  width: 97%;
+  height: 392px;
+  margin-top: 9px !important;
+  height:auto;
+  margin: auto;
+}
+   
+.child p{
+  margin-left:1em;
+  margin-right:1em;
+  text-align:left;
+}
+
 .subheadings{
   margin:10px;
   border-bottom:solid;
@@ -82,6 +105,7 @@ body{
   height:90px;
   border-bottom:solid;
   border-color:var(--accent1);
+  margin-bottom: 10px;
 }
 div{
   margin-left:auto;
@@ -226,6 +250,11 @@ button:hover{
 #tabheadingnav-popup button{
   width: 140px !important;
 }
+
+
+#lost:hover{color: var(--white1);}
+
+
 @media only screen and (max-width: 600px){
 
 p{    
@@ -254,7 +283,6 @@ img{
   display: none !important;
 }
 }
-   
 
 @media only screen and (min-width: 600px){
 
@@ -304,7 +332,12 @@ p{
   }
 }
 
-
+@media only screen and (max-width: 768px){
+  .PageContentEncompass{ 
+    width:100%;
+    margin:unset;
+  }
+} 
 
 @media only screen and (max-width: 877px){
   #noshow, #descheadingnav{

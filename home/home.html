@@ -33,11 +33,16 @@
         <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="../misc/images/icons/icon.png"> </head>
     
-    <script src="../footer.js"></script>
-    <script src="../header.js"></script>
+    <script src="../misc/JSbs/footer.js"></script>
+    <script src="../misc/JSbs/header.js"></script>
+    <script src="../misc/JSbs/basicinfo.js"></script>
     <body onload="myFooters();myHeaders();welcometext()">
 
-    <section class="note">
+    <!-- <section class="child">
+        <h1 id="welcometext" style="color:white;text-align: center;"></h1>
+    </section> -->
+
+    <section class="note" style="margin-top: 10px;">
         <div>
         <p class="noteheader"> note </p>
         <p> 
@@ -48,18 +53,19 @@
         </p>
         </div>
     </section>
-    <!-- <p id="welcometext"></p> -->
+
+    <section class="child">
     
-    <!-- <div>
-        <p> owner: <span id="ownername"> [error] </span></p>
-        <p> version: <span id="webversion"> [error] </span></p>
-        <p> changelogs (not implemented yet) </p>
-    </div> -->
+        <div>
+            <p> owner: <span id="ownername"> [error] </span></p>
+            <p> version: <span id="webversion"> [error] </span></p>
+            <p> changelogs (not implemented yet) </p>
+        </div>
         
+    </section>
    
-   
-   <script src="home.js"></script>
-   <script src="../basicinfo.js"></script>
+   <script src="../misc/JSbs/home.js"></script>
+   <script src="../misc/JSbs/basicinfo.js"></script>
         <script>
         //    window.location.href = "../coc.html";    
         </script>

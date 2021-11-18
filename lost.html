@@ -32,97 +32,124 @@
         <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
         
         <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="icon" href="/misc/images/icons/icon.png"> 
-
+        <link rel="icon" href="misc/images/icons/icon.png"> 
     </head>
-    <style>
-        body{
-            padding-top:0 !important;
-        }
-    </style>
-
-    <!-- <script src="footer.js"></script> -->
+    <!-- <script src="misc/JSbs/footer.js"></script> -->
     <body onload="myFooters()">
     
-    <section id="lostheader"> <p> are you lost? </p> </section>
 
-    <section class="note"> 
-        <p class="noteheader"> note </p>
-        <ol> 
-            <li> most pages are currently under construction so may be unavailable at the current moment of time </li>
-            <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore no css files or js files has been loaded. this is only available for convenience </li>
-            <li> pages in the old site may no longer work or load files as it wasn't built to last long term and is primarily css and html only </li>
-        </ol>
-    </section>
+        <style>
+            #headingsec, .note, #bottom, #leftist{
+                -webkit-touch-callout: none !important;
+                -webkit-user-select: none !important;
+                -khtml-user-select: none !important;
+                -moz-user-select: none !important;
+                -ms-user-select: none !important;
+                user-select: none !important;
+            }
+            body{
+                padding-top:0 !important;
+                -webkit-touch-callout: text;
+                -webkit-user-select: text;
+                -khtml-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+    
+        </style>
+
+
+    <section id="headingsec"> 
+        <p style="font-size:61px !important;margin:0px; color: #7eddd3;"> Are you lost? </p> <input type="text" id="Search" placeholder="search" size="20" /> <button onclick="Find ();">&gt;</button>    
+     </section>
+
+    <section class="PageContentEncompass">
+
+        <section class="note"> 
+            <p class="noteheader"> note </p>
+            <ol> 
+                <li> most pages are currently under construction so may be unavailable at the current moment of time </li>
+                <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore no css files or js files has been loaded. this is only available for convenience </li>
+                <li> pages in the old site may no longer work or load files as it wasn't built to last long term and is primarily css and html only </li>
+            </ol>
+        </section>
+        
+    
+        <div class="lostsites child">
+            <div>
+                    <p class="subheadings">new website  
+                        <!-- <button> collapse </button>    -->
+                    </p>
+            </div>
+            
+            <div>
+                <ul>
+                    <li> <a href="home/home.html">home</a> </li>
+                    <li> <a href="home/profile.html">about</a> </li>
+                    <li> <a href="dev/list.html">projects</a> </li>
+                    <li> lost? (current page) </li>
+                    <li> <a href="home/cd.html">countdown</a> </li>
+                    <li> <a href="coc.html">construction</a> </li>
+                </ul>
+            </div>
+        </div>
+    
+        
+        <section class="child"></section>   
+    
+    
+        <div class="lostsites child">
+            <div>
+                <p class="subheadings">matsaki  
+                    <!-- <button> collapse </button>    -->
+                <p>
+            </div>
+    
+            <div>
+                <ul>
+                    <li> <a href="matsaki/index.html"> home </a> </li>
+                </ul>
+            </div>
+        </div>
     
 
-    <div class="lostsites">
-        <div>
-            <div>
-                <p class="subheadings">new website</p>
-            </div>
-            <!-- <div>
-                collapse 
-            </div> -->
-        </div>
+        <section class="child"></section>   
         
-        <div>
-            <ul>
-                <li> <a href="home/home.html">home</a> </li>
-                <li> <a href="dev/profile.html">profile</a> </li>
-                <li> <a href="dev/list.html">respositories</a> </li>
-                <li> lost? (current page) </li>
-                <li> <a href="dev/cd.html">countdown</a> </li>
-                <li> <a href="coc.html">construction</a> </li>
-            </ul>
-        </div>
-    </div>
-
-
-
-    <div class="lostsites">
-        <div>
-            <div>        
-                <p class="subheadings">matsaki<p>
-            </div>
-<!--        <div> 
-                collapse 
-            </div> -->
-        </div>
-
-        <div>
-            <ul>
-                <li> <a href="matsaki/index.html"> home </a> </li>
-            </ul>
-        </div>
-    </div>
-
-
-
-    <div class="lostsites">
-        <div>
+    
+        <div class="lostsites child">
             <div>
-                <p class="subheadings">old website</p>
+                <p class="subheadings">old website
+                      <!-- <button> collapse </button>   -->
+                    </p>
             </div>
-            <!-- <div> 
-                collapse 
-            </div> -->
+    
+            <div>
+                <ul>
+                    <li><a href="dev/old/index.html"> home </a></li>
+                    <li><a href="dev/old/abo.html"> about </a></li>
+                    <li><a href="dev/old/shitcord.html"> discord </a></li>
+                    <li><a href="dev/old/coc.html"> construction </a></li>
+                </ul>
+            </div>
         </div>
+    
+    </section>
 
-        <div>
-            <ul>
-                <li><a href="dev/old/index.html"> home </a></li>
-                <li><a href="dev/old/abo.html"> about </a></li>
-                <li><a href="dev/old/shitcord.html"> discord </a></li>
-                <li><a href="dev/old/coc.html"> construction </a></li>
-            </ul>
-        </div>
-    </div>
+    <!-- temp. remove when css and js imported -->
+    <p id="leftist">© 2020 - <span id="cpyear">[error]</span> woe / All rights reserved.</p>
+    <script>
+    var currentYear = new Date(new Date().getFullYear());
+    var y = Math.floor(currentYear);
+    document.getElementById("cpyear").textContent = y;
+    </script>
+
+    <!-- keep -->
 
     <script>
      //   window.location.href = "coc.html";
     </script>
-
+    <script src="misc/JSbs/search.js"></script>
     </body>
     </html>
     
