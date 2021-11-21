@@ -17,8 +17,6 @@ body{
     background:var(--bg1);
     font-family: 'Noto Sans', sans-serif;
     padding: unset;
-    padding-top: 100px;
-    padding-bottom: 50px;
     margin:unset;
     -webkit-touch-callout: none;
          -webkit-user-select: none;
@@ -37,7 +35,7 @@ body{
   }
 }
 
-.PageContentEncompass{
+#PageContentEncompass{
   width:67%; 
   margin:auto;
 }
@@ -150,7 +148,11 @@ footer div{
 
 footer button{
   border:none !important;
-  width: auto !important;
+  width: -webkit-fill-available !important;
+}
+
+footer button:hover{
+  width: -webkit-fill-available !important;
 }
 
 footer p{
@@ -188,7 +190,6 @@ footer #rightist{
 }
 
 img{
-  max-width:400px;
   max-height:400px;
   margin-left: auto;
   margin-right: auto;
@@ -237,6 +238,22 @@ button:hover{
   margin: 0px;
 }
 
+
+.brandimg{
+  height: 50px;
+  margin: auto;
+  position: relative;
+  margin:auto;
+  filter: brightness(55%);
+  filter: grayscale(100%);
+  transition:1s;
+}
+
+.brandimg:hover{
+  filter: brightness(100%);
+  filter: grayscale(0%);
+}
+
 #tabheadingnav-popup{
   display: none;
   position: absolute;
@@ -249,8 +266,15 @@ button:hover{
 }
 #tabheadingnav-popup button{
   width: 140px !important;
+  border: none;
+  border-radius: 0;
+  border-left: solid;
+  border-right: solid;
 }
 
+#tabheadingnav-popup-trio{
+  display: flex;
+}
 
 #lost:hover{color: var(--white1);}
 
@@ -333,7 +357,7 @@ p{
 }
 
 @media only screen and (max-width: 768px){
-  .PageContentEncompass{ 
+  #PageContentEncompass{ 
     width:100%;
     margin:unset;
   }

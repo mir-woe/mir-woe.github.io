@@ -2,13 +2,14 @@
 // <input type="text" id="Search" placeholder="search" size="20" /> <button onclick="Find ();">&gt;</button>
 
 function Find() {
-    var str = document.getElementById("Search").value;
+    var search = document.getElementById("Search")
+    var str = search.value;
 
     if (str == "") {
         var SecondAttempt = prompt("Please enter a query");
         if (SecondAttempt != "") {
             var findQuery = window.find(SecondAttempt);
-            document.getElementById(Search).innerText = SecondAttempt;
+            search.value = SecondAttempt;
             if (!findQuery) {
                 alert(`could not find: ${str}`);
             }

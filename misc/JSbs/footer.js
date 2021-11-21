@@ -5,10 +5,11 @@ function myFooters() {
 
     var footer = document.createElement("FOOTER");
     footer.setAttribute("id", "bottom");
-    footer.innerHTML = '<button style="display: inline-block;" id="expand-btn" onclick="myFootersExpand()">menu</button> <div style="display: none; border-bottom: solid #2d2e30 !important" id="shrink-btn"> <button onclick="myFootersShrink()">&darr;</button>   <a href="https://mir-woe.github.io/home/home.html"><button>home</button></a>     <a href="https://mir-woe.github.io/home/profile.html"><button> about </button></a>  <a href="https://mir-woe.github.io/dev/list.html"><button> respositories </button></a>  <a href="https://mir-woe.github.io/lost.html"><button>lost?</button></a></div>    <div id="noshow"><p id="leftist">&#169; 2020 - <span id="cpyear">n</span> woe / All rights reserved.</p> <p><a id="rightist" target=blank href="https://github.com/mir-woe/mir-woe.github.io">source code</a></p></div>';
+    footer.innerHTML = '<button style="display: inline-block;" id="expand-btn" onclick="myFootersExpand()">menu</button> <div style="display: none; border-bottom: solid #2d2e30 !important" id="shrink-btn"> <button onclick="myFootersShrink()">&darr;</button>   <a href="https://mir-woe.github.io/home/home.html"><button>home</button></a>     <a href="https://mir-woe.github.io/home/profile.html"><button> about </button></a>  <a href="https://mir-woe.github.io/dev/list.html"><button> respos </button></a>  <a href="https://mir-woe.github.io/lost.html"><button>lost?</button></a></div>    <div id="noshow"><p id="leftist">&#169; 2020 - <span id="cpyear">n</span> woe / All rights reserved.</p> <p><a id="rightist" target=blank href="https://github.com/mir-woe/mir-woe.github.io">source code</a></p></div>';
     document.body.appendChild(footer);
 
     document.getElementById("cpyear").textContent = y;
+    document.body.style.paddingBottom = ("45px");
 }
 
 function myFootersExpand(){

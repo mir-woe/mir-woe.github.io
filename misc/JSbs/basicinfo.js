@@ -4,6 +4,8 @@ var tglink = "https://t.me/LeMiri"
 var spotlink = "https://open.spotify.com/user/jcjbe02uxml6wion3hjg6ss3p"
 var ytlink = "https://www.youtube.com/channel/UCb-ILQ2PHkvyM9xxzNv7Q-Q/featured"
 var ttvlink = "https://www.twitch.tv/woe_ikhlas"
+var cashlink = "https://cash.app/%C2%A3hungryikhlas"
+var paylink = "https://paypal.me/hungrymiri"
 
 
 var list = {
