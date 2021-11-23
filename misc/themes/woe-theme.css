@@ -9,6 +9,7 @@
         --ik2: #72767d;
         --ik3: #4f545c;
         --ikhlas7-hover: #fff;
+        --ik4: #161c24;
         /* --ik4: #1A1F26; */
         --ikhlas-green: #16c063;
         --ikhlas-red: #e02460;
@@ -22,7 +23,6 @@
         --ikhlasdark2: #FF94D1;
         --ikhlas3: #a77edd4f;
         /* --ikhlas3: #a48fffab; */
-        --ik4: #161c24;
         --ik5: #ff94d154;
         --ikhlas5: #b96794;
         --ikhlas6: #ff94d19d;
@@ -38,7 +38,6 @@
         --ikhlas2: #ff9494;
         --ikhlaslight2: #ff9494;
         --ikhlas3: #ff8f8fab;
-        --ik4: #161c24;
         --ik5: #ff949454;
         --ikhlas5: #b96767;
         --ikhlas6: #ff94949d;
@@ -505,7 +504,16 @@
     .sampleLink-2NLvZg {
         color:gray;
     }
-    
+
+    .calendarPicker-2yf6Ci .react-datepicker, .calendarPicker-2yf6Ci .react-datepicker__header, .react-datepicker__current-month, .calendarPicker-2yf6Ci .react-datepicker__day {
+        background-color: var(--ikhlas1) !important;
+        /* color: var(--ikhlas4) !important;    */
+    }
+
+    .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day{
+        background-color: var(--ik4);
+        /* color: #18191c !important; */
+    }
 
     /* Servers discover page */
     .pageWrapper-1PgVDX {
@@ -729,6 +737,7 @@
     
     .jumpToPresentBar-G1R9s6{
         width: 85%;
+        padding-bottom: 0px;
         margin: auto;
     }
     .newMessagesBar-265mhP:hover,.jumpToPresentBar-G1R9s6:hover{
@@ -1004,6 +1013,10 @@
     }
     .focusLock-Ns3yie .top-28JiJ- .item-PXvHYJ, .repoHeader-2KfNvH .top-28JiJ- .item-PXvHYJ, .header-2-Imhb .item-PXvHYJ, .contenikhlasrapper-SvZHNd .navButton-2gQCx-, .searchResulikWrap-3-pOjs .tab-2j5AEF, .container-7uh5fX .tab-PQvTH4 {
         padding: 0 20px 0 20px;
+    }
+
+    .theme-dark .activeButton-rvKcqq, .theme-dark .activeButton-rvKcqq:hover, .theme-light .activeButton-rvKcqq, .theme-light .activeButton-rvKcqq:hover{
+        background-color: var(--ikhlas2);
     }
 
     .userPopout-xaxa6l .banner-2QYc2d {
