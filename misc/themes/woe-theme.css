@@ -1,4 +1,3 @@
-
 /* main colors */
 :root {
     /*   --ikhlas1: #3b4168; 
@@ -19,14 +18,14 @@
     
     /* dark accents */
     .theme-dark {
-        --ikhlas2: #FF94D1;
-        --ikhlasdark2: #FF94D1;
+        --ikhlas2: #eca1cd;
+        --ikhlasdark2: #eca1cd;
         --ikhlas3: #a77edd4f;
         /* --ikhlas3: #a48fffab; */
         --ik5: #ff94d154;
         --ikhlas5: #b96794;
         --ikhlas6: #ff94d19d;
-        --ikhlas1-hover: #dd1dd42c;
+        --ikhlas1-hover: #dd1dd313;
         --ikhlas2-hover: #f21cd525;
         --ikhlas3-hover: #ffe0f85b;
         --ikhlas4-hover: #f21cce38;
@@ -1395,7 +1394,6 @@
     }
     
     /* reactions */
-    
     .reaction-1hd86g.reactionMe-wv5HKu{
         background-color: var(--brand-experiment-15a) !important;
         border-color: var(--brand-experiment) !important;
