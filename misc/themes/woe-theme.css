@@ -4,7 +4,6 @@
         --ikhlas1: #202225; 
         --ikhlas1: #050b2b; */
         --ikhlas1: #14181F;
-        /* --ikhlas1: #14181F; */
         /* --ikhlas1: #1A1F26; */
         --ikhlas4: #E0E5FF;
         --ik2: #72767d;
@@ -22,17 +21,17 @@
         --ikhlasdark2: #eca1cd; */
         --ikhlas2: #cd91Bd;
         --ikhlasdark2: #cd91Bd;
-        --ikhlas3: #a77edd4f;
+        --ikhlas3: #a77edd31;
         /* --ikhlas3: #a48fffab; */
-        --ik5: #ff94d154;
+        --ik5: #ff94d13a;
         --ikhlas5: #b96794;
-        --ikhlas6: #ff94d19d;
+        --ikhlas6: #ff94d179;
         --ikhlas1-hover: #dd1dd313;
-        --ikhlas2-hover: #f21cd525;
+        --ikhlas2-hover: #f311d517;
         --ikhlas3-hover: #ffe0f85b;
-        --ikhlas4-hover: #f21cce38;
+        --ikhlas4-hover: #f21cce25;
         --ikhlas5-hover: #db1ab1;
-        --ikhlas6-hover: #db1ab156;
+        --ikhlas6-hover: #db1ab133;
     }
     
     .theme-light {
