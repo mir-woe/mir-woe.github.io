@@ -1,14 +1,16 @@
+
 /* main colors */
 :root {
     /*   --ikhlas1: #3b4168; 
         --ikhlas1: #202225; 
         --ikhlas1: #050b2b; */
-        --ikhlas1: #14181F;
-        /* --ikhlas1: #1A1F26; */
+        --ikhlas1: #1A1F26;
         --ikhlas4: #E0E5FF;
         --ik2: #72767d;
         --ik3: #4f545c;
         --ikhlas7-hover: #fff;
+        --ik4: #161c24;
+        /* --ik4: #1A1F26; */
         --ikhlas-green: #16c063;
         --ikhlas-red: #e02460;
         --ikhlas-red-hover: #e0248225;
@@ -72,7 +74,7 @@
         --interactive-hover: var(--ikhlas2) !important;
         --interactive-active: var(--ikhlas2) !important;
         --interactive-muted: var(--ik3) !important;
-        --background-primary: var(--ikhlas1) !important;
+        --background-primary: var(--ik4) !important;
         --background-secondary: var(--ikhlas1) !important;
         --background-secondary-alt: var(--ikhlas1) !important;
         --background-tertiary: var(--ikhlas1) !important;
@@ -509,7 +511,7 @@
     }
 
     .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--disabled, .theme-light .calendarPicker-2yf6Ci .react-datepicker__day--outside-month, .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day{
-        background-color: var(--ikhlas1);
+        background-color: var(--ik4);
         /* color: #18191c !important; */
     }
 
@@ -1083,7 +1085,6 @@
     }
     div.container-1giJp5>div>.lookFilled-1Gx00P.colorBrand-3pXr91 {
         border: 1px solid var(--ikhlas2) !important;
-        color: var(--ikhlas4);
     }
     div.container-1giJp5>div>.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
         background-color: var(--ikhlas2-hover) !important;
@@ -1286,12 +1287,9 @@
         background-color: transparent !important;
         transition:0.4s;
     }
-    .lookFilled-1Gx00P.colorBrand-3pXr91{
-        color:var(--ikhlas1);
-    } 
-    /* .lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp{
+    .lookFilled-1Gx00P .contents-18-Yxp, .lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp{
         color: var(--ikhlas4);
-    } */
+    }
     .lookFilled-1Gx00P.colorBrand-3pXr91, .lookFilled-1Gx00P.colorBrandNew-g5lmBU {
         border-radius: 6px;
     }
