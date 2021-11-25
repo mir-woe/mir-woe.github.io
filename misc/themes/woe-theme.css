@@ -17,21 +17,19 @@
     
     /* dark accents */
     .theme-dark {
-        /* --ikhlas2: #eca1cd;
-        --ikhlasdark2: #eca1cd; */
-        --ikhlas2: #cd91Bd;
-        --ikhlasdark2: #cd91Bd;
-        --ikhlas3: #a77edd31;
+        --ikhlas2: #FF94D1;
+        --ikhlasdark2: #FF94D1;
+        --ikhlas3: #a77edd4f;
         /* --ikhlas3: #a48fffab; */
-        --ik5: #ff94d13a;
+        --ik5: #ff94d154;
         --ikhlas5: #b96794;
-        --ikhlas6: #ff94d179;
-        --ikhlas1-hover: #dd1dd313;
-        --ikhlas2-hover: #f311d517;
+        --ikhlas6: #ff94d19d;
+        --ikhlas1-hover: #dd1dd42c;
+        --ikhlas2-hover: #f21cd525;
         --ikhlas3-hover: #ffe0f85b;
-        --ikhlas4-hover: #f21cce25;
+        --ikhlas4-hover: #f21cce38;
         --ikhlas5-hover: #db1ab1;
-        --ikhlas6-hover: #db1ab133;
+        --ikhlas6-hover: #db1ab156;
     }
     
     .theme-light {
