@@ -10,7 +10,7 @@ var gdevlink = "https://developers.google.com/profile/u/mir_woe"
 
 var list = {
     ownername : "woe",
-    webversion : "v3.4.3",
+    webversion : "v3.4.4",
     gitname : "@mir-woe",
     gdevname : "@mir-woe",
     ttvname : "@woe_ikhlas",
