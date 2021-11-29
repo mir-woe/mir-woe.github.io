@@ -20,6 +20,8 @@
 
 .images_daddy {
    flex-shrink: 0;
+   height: 80px;
+   width: 80px;
 }
 
 .images_daddy img {
