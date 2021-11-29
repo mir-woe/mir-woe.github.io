@@ -38,6 +38,7 @@ body{
 #PageContentEncompass{
   width:67%; 
   margin:auto;
+  max-width: 2000px;
 }
 
 .note{
