@@ -39,85 +39,13 @@
 <script src="../misc/JSbs/footer.js"></script>
 
 <body onload="myFooters();myHeaders()">
-
-    <style>
-        .timespassing {
-            width: 100%;
-            padding: 10px;
-            margin-left: auto;
-            margin-right: auto;
-
-            text-align: center;
-
-            color: var(--white1);
-            border: none;
-
-            overflow: hidden;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-        }
-
-        .info {
-            font-size: calc(10px + 6 * ((100vw - 30px) / 100)) !important;
-        }
-
-        .info p, .info p:hover {
-            font-size: calc(10px + 6 * ((100vw - 600px) / 100)) !important;
-            color: var(--white1);
-        }
-
-        @media only screen and (max-width: 768px) {
-
-            .info p, .units {
-                font-size: 10px !important;
-            }
-        }
-    </style>
-
-
-    <!-- document.getElementById("dayss").textContent = d;
-        document.getElementById("hourss").textContent = h;
-        document.getElementById("minutess").textContent = m;
-        document.getElementById("secondss").textContent = s;
-        
-        document.getElementById("age").textContent = y; -->
-
-    <!-- 
-        <section>
-            <div> <p> countdown till <span id="newage">[error]</span> </p></div>
-        </section> -->
-
+    
+       
 
     <section>
-        <!-- copy and paste from old project -->
-        <table class="timespassing">
-
-            <tr class="info">
-                <td colspan="4">
-                    <p> countdown till <span id="ownername">[error]</span>'s <span id="newage">[error]</span>th birthday
-                    </p>
-                </td>
-            </tr>
-
-            <tr class="info">
-                <td id="dayss">[err]</td>
-                <td id="hourss">[err]</td>
-                <td id="minutess">[err]</td>
-                <td id="secondss">[err]</td>
-            </tr>
-
-            <tr class="units">
-                <td>Days</td>
-                <td>Hours</td>
-                <td>Minutes</td>
-                <td>Seconds</td>
-            </tr>
-
-        </table>
-
+        <div> <p> days till <span id="newage">[error]</span>th birthday </p></div>
     </section>
+
     <script>
         // window.location.href = "../coc.html";
     </script>

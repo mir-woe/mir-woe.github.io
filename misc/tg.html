@@ -26,16 +26,19 @@
         <meta itemprop="image" content="https://mir-woe.github.io/misc/images/socials/telegram.png">
         <meta property="og:image" content="https://mir-woe.github.io/misc/images/socials/telegram.png">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="./images/icons/icon.png"> 
         <script src="JSbs/basicinfo.js"></script>
 
     </head>
 
     <body>
-        <p>redirecting you to woe's telegram...</p>
+        <p>redirecting you to woe's telegram... or click <span id="redirectlink">here</span></p>
     <script>
     window.location.href = tglink;
+    </script>
+    <script>
+    document.getElementById("redirectlink").href = tglink;
     </script>
     
     </body>

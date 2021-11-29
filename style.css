@@ -2,8 +2,8 @@
 /*   font-family: 'Noto Sans', sans-serif; */
 
 :root {
-  --bg1: #202225;
-  --bg2: #28282c;
+  --bg1: #14181f;
+  --bg2: #191e27;
   --accent1: #7eddd3;
   --accent2: #FF94D1;
   --red1: #73223e;
@@ -41,7 +41,7 @@ body{
 }
 
 .note{
- border:solid var(--red2);
+ border: 2px solid var(--red2);
  background-color: var(--red1);
  border-radius: 10px;
  color: var(--bg1);
@@ -51,12 +51,12 @@ body{
 }
 
 .noteheader{
-  border-bottom: solid;
+  border-bottom: 2px solid;
   color: var(--bg1);
 }
 
 .note div{
-  border:solid var(--bg1);
+  border: 2px solid var(--bg1);
   border-radius: 10px;
   color: var(--bg1);
   width: -webkit-fill-available;
@@ -76,13 +76,14 @@ body{
 
 
 .child{    
-  border: solid;
-  border-radius: 5px;
+  border: 2px solid;
+  border-radius: 10px;
   width: 97%;
   height: 392px;
   margin-top: 9px !important;
   height:auto;
   margin: auto;
+  overflow: hidden;
 }
    
 .child p{
@@ -93,7 +94,7 @@ body{
 
 .subheadings{
   margin:10px;
-  border-bottom:solid;
+  border-bottom: 2px solid;
   overflow:hidden;
   color: var(--accent1) !important;
 }
@@ -101,8 +102,7 @@ body{
 #headingsec{
   width:100%; 
   height:90px;
-  border-bottom:solid;
-  border-color:var(--accent1);
+  border-bottom: 2px solid var(--accent1);
   margin-bottom: 10px;
 }
 div{
@@ -163,30 +163,33 @@ footer p{
 }
 
 footer #rightist{
-  font-size: 10px;
+  font-size: 10px !important;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
+  border-radius: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--bg1); 
+  border-radius: 10px;
 }
    
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--gray1); 
+  border-radius: 10px;
 }
   
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background:var(--gray2); 
   width: 10px;
   height: 10px;
+}
+
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-track-piece{
+  border-radius: 10px;
 }
 
 img{
@@ -198,7 +201,8 @@ img{
   height: auto;
   display: block;
   border: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
+  -webkit-user-drag: none;
 }
 
 p, a{
@@ -217,8 +221,7 @@ button{
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  border: solid;
-  border-color: var(--accent1);
+  border: 2px solid var(--accent1);
   background-color: transparent;
   color: var(--white1);
   transition:0.4s;
@@ -240,7 +243,7 @@ button:hover{
 
 
 .brandimg{
-  height: 50px;
+  height: 40px;
   margin: auto;
   position: relative;
   margin:auto;
@@ -281,12 +284,8 @@ button:hover{
 
 @media only screen and (max-width: 600px){
 
-p{    
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680))
-}
-        
-img{
-  max-width: 100%; 
+p, a{    
+  font-size: calc(12px + 6 * ((100vw - 320px) / 680))
 }
     
 #noshow, #descheadingnav{
@@ -309,8 +308,8 @@ img{
 
 @media only screen and (min-width: 600px){
 
-p{    
-  font-size: calc(16px + 6 * ((100vw - 320px) / 100000)) !important
+p, a{    
+  font-size: calc(14px + 6 * ((100vw - 320px) / 100000)) !important
 }
       
   footer button{

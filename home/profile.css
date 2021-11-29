@@ -1,5 +1,72 @@
 @import url('../style.css');
 
+.profile_header {
+   background-size: cover;
+   border-radius: 10px 10px 0 0;
+   background-position: center;
+   background-color: var(--secondary-background);
+}
+
+.profile {
+   gap: 16px;
+   width: fit-content;
+   display: flex;
+   padding: 20px;
+   align-items: center;
+   flex-direction: row;
+}
+
+.images_daddy {
+   flex-shrink: 0;
+}
+
+.images_daddy img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 1000px;
+}
+
+.profile .username {
+   flex-grow: 1;
+   min-width: 0;
+   display: flex;
+   flex-direction: column;
+   color: var(--white1);
+   font-size: 30px;
+   text-align: center;
+}
+
+.profile_tabs {
+   gap: 8px;
+   display: flex;
+   padding: 0 1.5em;
+   font-size: .875rem;
+}
+
+#profile_tab_about{
+   color: var(--accent1);
+   border-bottom: 2px solid var(--accent1);
+}
+
+.profile_tabs>div {
+   padding: 8px;
+   color: var(--white1);
+   cursor: pointer;
+   border-bottom: 2px solid transparent;
+   transition: border-bottom .4s;
+}
+
+.about_subheadings{    
+   font-size: calc(16px + 6 * ((100vw - 100000px) / 100000)) !important;
+   color: var(--gray1);
+   margin-bottom: 0px;
+}
+
+.about_info{
+   margin-top: 0px;
+}
+
 #redc{
    overflow-y: hidden;
    overflow-x: scroll;
@@ -7,13 +74,14 @@
 }
 
 #agebutton{
-   padding:0 10 0 10;
-   margin: 0;
+   padding:2px 2px 2px 2px;
+   margin: 2px 0 0 0;
    width: auto !important;
+   color: var(--accent1);
 }
 
 #agebutton:hover{
-   width: auto !important;
+   color: var(--bg2);
 }
 
 #redc img{
@@ -21,19 +89,7 @@
 }
 
 
-#pfpp {
-   float: right;
-   height: 150px;
-   margin: 1em;
-   border-radius: 10px;
-}
-
-
 .socials{
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: unset;
-   margin-top: unset;
    -webkit-touch-callout:text;
    -webkit-user-select: text;
    -khtml-user-select: text;
@@ -42,7 +98,13 @@
    user-select: text;
 }
 
-
+.mysocials{
+   display: flex; 
+   width: 40%;
+   align-items: center;
+   padding: 5px;
+   gap: 5px;
+}
 #birthday{
    position:fixed;
    top: 50%;
@@ -53,7 +115,7 @@
    display: none;
    height: auto;
    width: 60%;
-   border:solid;
+   border: 2px solid;
    border-radius: 10px;
    box-shadow: 0 0 0px 0px , 70px -60px 100px black, 70px 60px 100px black, -70px 60px 100px black, -70px -60px 100px black; 
    background-color: var(--bg1);
@@ -66,28 +128,18 @@
 #birthday button:hover{
    width:auto;
 }
-
-
+#birthday p{
+   text-align: center;
+}
 
 @media only screen and (max-width: 768px){
-.lmaolmao{
- border-top:solid;
- padding-top:4px;
-   }
 
-
-#pfpp{
- margin:auto;
- width: 93%;
- height:auto;
- float:unset;
- margin-top:10px !important;
+.profile{
+   display: block;
 }
-.papi{
- width:100%;
- position:relative;
-    }
-
+#makes_name_centered_on_pc{
+   display: none;
+}
 #birthday{
    width: 90%;
 }
@@ -105,4 +157,3 @@
    margin: 10 10 0 10;
 }
 }
-

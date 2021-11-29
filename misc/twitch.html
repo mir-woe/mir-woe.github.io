@@ -26,16 +26,19 @@
         <meta itemprop="image" content="https://mir-woe.github.io/misc/images/socials/twitch.png">
         <meta property="og:image" content="https://mir-woe.github.io/misc/images/socials/twitch.png">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="./images/icons/icon.png"> 
         <script src="JSbs/basicinfo.js"></script>
 
     </head>
 
     <body>
-        <p>redirecting you to woe's twitch...</p>
+        <p>redirecting you to woe's twitch... or click <a id="redirectlink">here</a ></p>
     <script>
     window.location.href = ttvlink;
+    </script>
+    <script>
+    document.getElementById("redirectlink").href = ttvlink;
     </script>
     
     </body>

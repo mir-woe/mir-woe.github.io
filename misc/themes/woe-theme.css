@@ -939,9 +939,9 @@
     .threadSidebar-1o3BTy {
         margin-left: 0px;
         border-radius: 0;
-        border-top: 1px solid var(--ikhlas3-hover) !important;
-        border-bottom: 1px solid var(--ikhlas3-hover) !important;
-        border-right: 1px solid var(--ikhlas3-hover) !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        border-right: none !important;
     }
     /* user center */
     .panels-j1Uci_{

@@ -26,7 +26,7 @@
         <meta itemprop="image" content="https://mir-woe.github.io/misc/images/socials/paypal.png">
         <meta property="og:image" content="https://mir-woe.github.io/misc/images/socials/paypal.png">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="./images/icons/icon.png"> 
 
         <script src="JSbs/basicinfo.js"></script>
@@ -34,10 +34,13 @@
     </head>
 
     <body>
-        <p>redirecting you to woe's paypal...</p>
+        <p>redirecting you to woe's paypal... or click <a id="redirectlink">here</a></p>
         
     <script>
         window.location.href = paylink ;
+    </script>
+    <script>
+    document.getElementById("redirectlink").href = paylink;
     </script>
     
     </body>
