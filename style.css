@@ -51,6 +51,15 @@ body{
  margin-right: auto;
 }
 
+.note li{
+  -webkit-touch-callout: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+}
+
 .noteheader{
   border-bottom: 2px solid;
   color: var(--bg1);
@@ -85,6 +94,7 @@ body{
   height:auto;
   margin: auto;
   overflow: hidden;
+  background-color: var(--bg2);
 }
    
 .child p{
@@ -106,6 +116,7 @@ body{
   border-bottom: 2px solid var(--accent1);
   margin-bottom: 10px;
 }
+
 div{
   margin-left:auto;
   margin-right:auto;
@@ -165,6 +176,10 @@ footer p{
 
 footer #rightist{
   font-size: 10px !important;
+}
+
+li a{
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -234,6 +249,27 @@ button:hover{
   color: var(--bg1);
   background-color: var(--white1);
   width: 110px;
+}
+
+#search{
+  padding:10px;
+  margin:10px;
+  width: 200px;
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+  background-color: var(--bg1);
+  transition: .4s;
+  color: var(--white1);
+  outline: none;
+}
+
+#search:hover, #search:focus, #search:target{
+  /* width: 250px; */
+  background-color: var(--bg2);
+}
+
+#seachbutton:hover{
+  width: auto;
 }
 
 #logo{

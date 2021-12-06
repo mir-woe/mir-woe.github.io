@@ -1,5 +1,5 @@
 // copy and paste of search button + input html
-// <input type="text" id="Search" placeholder="search" size="20" /> <button onclick="Find ();">&gt;</button>
+// <input type="text" id="Search" placeholder="search" size="20" /> <button id="seachbutton" onclick="Find ();">&gt;</button>
 
 function Find() {
     var search = document.getElementById("Search")

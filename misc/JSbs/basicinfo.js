@@ -24,10 +24,8 @@ var list = {
 };
 
 for (var value in list) {
-    try{
-        if (list.hasOwnProperty(value)) {
-            document.getElementById(value).textContent = list[value];
-        }
+    try{     
+        document.getElementById(value).textContent = list[value];
     } catch (err){
         console.log(err)
     }

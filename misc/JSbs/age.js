@@ -57,9 +57,7 @@ function ccc(){
 
     for (var value in IDs) {
         try{
-            if (IDs.hasOwnProperty(value)) {
                 document.getElementById(value).textContent = IDs[value];
-            }
         } catch (err){
             console.log(err)
         }

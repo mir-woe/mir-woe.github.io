@@ -402,7 +402,7 @@
     }
     .peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
         background-color: var(--ikhlas1-hover) !important;
-        border-radius: 5px;
+        border-radius: 6px;
         -webkit-transition: background-color .17s ease,color .17s ease;
         transition: background-color .17s ease,color .17s ease;
     }
@@ -779,9 +779,6 @@
     }
     .clipContainer-eeROt0 {
         border-radius: 8px;
-    }
-    .sprite-2iCowe {
-        transform: scale(0.89) !important;
     }
     
     [aria-label*="Send a gift"] {
@@ -1285,6 +1282,7 @@
         border: 1px solid var(--ikhlas4);
         background-color: transparent !important;
         transition:0.4s;
+        border-radius: 6px;
     }
     .lookFilled-1Gx00P.colorBrand-3pXr91{
         color:var(--ikhlas1);
