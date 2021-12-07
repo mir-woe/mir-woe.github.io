@@ -210,6 +210,14 @@
         margin-left: 60px;
     }
     
+    
+    /* chrismas */
+    .childWrapper-anI2G9>svg>g>rect {
+        fill: var(--ikhlas2-hover) !important;
+        background-color: var(--ikhlas2-hover) !important;
+        color: var(--ikhlas4) !important;
+    }
+
     /* Logo Home icon */
     .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
         background-color: var(--ikhlas2-hover) !important;
