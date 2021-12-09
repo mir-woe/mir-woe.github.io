@@ -547,9 +547,8 @@
         background-color: var(--ikhlas1) !important;
     }
 
-    .powercord-product, .modal-yWgWj-, .powercord-toast, .powercord-toast .contents, .powercord-toast .contents .inner {
+    .powercord-product, .modal-yWgWj-, .powercord-toast, .powercord-toast .contents, .powercord-toast .contents .inner, .powercord-toast .header {
         background-color: var(--ikhlas1) !important;
-        border: 1px solid var(--deprecated-text-input-border);
     }
 
     .card-o7rAq-, .addFriendInputWrapper-3PjsbB, .card-3uOWw3, .cardPrimary-1Hv-to, .accountList-33MS45, .connectedAccount-2Jb-Z0, .premiumInlineNotice-159eYs, .codeRedemptionRedirect-1wVR4b, .warning-3C2pOH, .notDetected-33MY4s, .notDetected-33MY4s{
