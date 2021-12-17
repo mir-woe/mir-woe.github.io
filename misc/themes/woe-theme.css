@@ -1237,56 +1237,15 @@
     }
     /* Boost Server */
 
-    .headerLogo--hLLAk > g > path {
-        fill: var(--ikhlas4) !important;
-    }
-    .iconTierThree-1dzVP7{
-        color: var(--ikhlas4);
-    }
-    .tier-2pEkRl {
-        border: 1px solid var(--ikhlas3-hover);
-    }
-    .tierHeaderUnlocked-3lTDnP {
-        background-color: var(--ikhlas4) !important;
-    }
-    .tierHeaderLocked-3S508x, .tierBody-3aUxuc {
-        background-color: var(--ikhlas2-hover) !important;
-        color: var(--ikhlas4);
-    }
-    .perksModal-1pSu7w {
+    .tierBody-24neog, .perksModal-12XaFK, .perk-3ia9RN, .theme-dark .tierUnlocked-2F5vd1, .theme-light .tierUnlocked-2F5vd1{
         background-color: var(--ikhlas1) !important;
     }
-    .tierBody-16Chc9 {
-        background-color: var(--ikhlas5) !important;
+    .tierMarkerBackground-3q29am{
+        background-color: var(--ikhlas2-hover) !important;
     }
-    .tierHeaderLocked-1s2JJz {
-        background-color: var(--ikhlas1) !important; 
-    }
-    .tierWrapper-W9ajqp {
-        border: 1px solid var(--ikhlas3-hover) !important;
-    }
-    .barBackground-2EEiLw, .tierMarkerBackground-3q29am {
-        background-color: var(--ikhlas5) !important;
-    }
-    .ctaBar-2UsjF2 {
-        border: 1px solid var(--ikhlas3-hover) !important;
-    }
-    .perk-2WeBWW {
-        background-color: var(--ikhlas5) !important;
-    }
-    
-    .gemIndicatorContainer-2jdECl {
-        background-color: var(--ikhlas4) !important;
-    }
-    .cardWrapper-2Min21 {
-        border: 1px solid var(--ikhlas3-hover) !important;
-        transition: 0.4s;
-    }
-    .cardWrapper-2Min21:hover{
-        background-color: var(--ikhlas1-hover);
-    }
-    .card-3AyPWq:hover{
-        background-color: transparent;
+
+    .theme-dark .tier1Icon-1HqiIe, .theme-dark .tier2Icon-2Brq6c, .iconTierThree-2VqtlC{
+        color: var(--ikhlas1) !important;
     }
     /* Buttons & settings page */
 
