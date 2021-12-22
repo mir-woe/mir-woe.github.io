@@ -1,48 +1,493 @@
-
 <html>
 
-    <head>
-        <title>home..?</title>
+<head>
+    <title>home..?</title>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <meta name="Creator" content="Ikhlas">
-        <meta name="keywords" content="aqwsdfghjkwoksdjcfienbfinvinrinvi">
-        <meta name="Description" content="idek dude, its just cool">
+    <meta name="Creator" content="Ikhlas">
+    <meta name="keywords" content="aqwsdfghjkwoksdjcfienbfinvinrinvi">
+    <meta name="Description" content="idek dude, its just cool">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta property="og:title" content="welcome.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://mir-woe.github.io/">
-        <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-        <meta property="og:description" content="it's just a website, ain't it?">
-        <meta property="og:site_name" content="mir-woe">
+    <meta property="og:title" content="welcome.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mir-woe.github.io/">
+    <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+    <meta property="og:description" content="it's just a website, ain't it?">
+    <meta property="og:site_name" content="mir-woe">
 
-        <meta name="twitter:card" content="welcome.">
-        <meta name="twitter:site" content="@publisher_handle">
-        <meta name="twitter:title" content="a bliming website, nothin special">
-        <meta name="twitter:description" content="it's just a website, ain't it?">
-        <meta name="twitter:creator" content="@author_handle">
-        <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-       
-        <meta itemprop="name" content="welcome.">
-        <meta itemprop="description" content="it's just a website, ain't it?">
-        <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-        
-        <link rel="stylesheet" href="../style.css">
-        <link rel="icon" href="../misc/images/icons/icon.png"> </head>
-    
-    <script src="../misc/JSbs/footer.js"></script>
-    <script src="../misc/JSbs/header.js"></script>
-    <script src="../misc/JSbs/basicinfo.js"></script>
-    <body onload="myFooters();myHeaders();welcometext()">
+    <meta name="twitter:card" content="welcome.">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="a bliming website, nothin special">
+    <meta name="twitter:description" content="it's just a website, ain't it?">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
 
-    <!-- <section class="child">
-        <h1 id="welcometext" style="color:white;text-align: center;"></h1>
-    </section> -->
+    <meta itemprop="name" content="welcome.">
+    <meta itemprop="description" content="it's just a website, ain't it?">
+    <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
 
-    <section class="note" style="margin-top: 10px;">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../misc/images/icons/icon.png">
+</head>
+<script src="../misc/JSbs/footer.js"></script>
+<!-- <script src="../misc/JSbs/basicinfo.js"></script> -->
+
+<body onload="cpyear()">
+
+    <style>
+        .centershi {
+            display: grid;
+            grid-gap: 10px;
+            align-items: center;
+            justify-content: start;
+            align-content: center;
+            justify-items: start;
+            height: -webkit-fill-available;
+            height: fill-available;
+            min-height: -moz-available;
+            height: 100%;
+            /* min-height: 500px; */
+        }
+
+        #bottom {
+            display: none;
+        }
+
+        #logoHome {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100%;
+            border-bottom: 2px solid;
+            font-size: 63px !important;
+            color: var(--accent1);
+            transition: 0.4s;
+        }
+
+        #welcometext {
+            margin: 0px;
+        }
+
+        footer {
+            position: relative !important;
+            border-top: 2px solid var(--bg2);
+        }
+
+        p {
+            text-align: left !important;
+        }
+
+        li {
+            color: var(--white1);
+        }
+
+        #HomePageButtons {
+            margin: 0px !important;
+            padding: 1px 6px !important;
+        }
+
+        #HomePageButtons:hover {
+            width: auto;
+        }
+
+        #changelogs-header {
+            border-bottom: 2px solid;
+            display: grid;
+            grid-auto-flow: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #changelogs-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #PageContentEncompass {
+                width: -webkit-fill-available !important;
+                min-width: -moz-available;
+                width: fill-available;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    </style>
+
+    <section id="PageContentEncompass" class="centershi">
+        <p id="logoHome"> woe. </p>
+
+        <p id="welcometext" style="color:white;text-align: center;"> </p>
+
+        <a href="https://mir-woe.github.io/home/profile.html"><button id="HomePageButtons"> profile </button></a>
+        <a href="https://mir-woe.github.io/dev/list.html"><button id="HomePageButtons"> projects </button></a>
+        <a href="#changelogs"><button id="HomePageButtons"> change logs </button></a>
+
+        <a href="https://mir-woe.github.io/lost.html"><button id="HomePageButtons"> lost? view contents </button></a>
+    </section>
+    <script>
+        function mom() {
+            var chronological = document.getElementById("CLolder");
+            var val = (chronological.options[chronological.selectedIndex].value)
+            var changelogs = document.getElementById("changelogs-content");
+            if (val == "OldToNew") {
+                changelogs.style.flexWrap = "wrap-reverse"
+            } else {
+                changelogs.style.flexWrap = "wrap"
+            }
+        }
+    </script>
+    <section id="PageContentEncompass">
+        <div id="changelogs">
+
+            <!-- top part change log + old->new button -->
+            <section id="changelogs-header">
+                <p id="changelogs-title"> Change logs </p>
+                <div style="display: inline-flex;flex-direction: row;align-content: flex-end;">
+                    <p> sort: </p>
+                    <select name="CLolder" id="CLolder" onclick="mom()">
+                        <option value="NewToOld">new to old</option>
+                        <option value="OldToNew">old to new</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- actual change logs  -->
+            <section id="changelogs-content">
+
+                <!--                 
+                <div id="" class="child">
+                    <p class="subheadings"></p>
+                    <div>
+                        <ol><ul>
+                            <li></li>
+                        </ul></ol>
+                    </div>
+                </div> 
+                -->
+
+                <div id="3.5.0" class="child">
+                    <p class="subheadings">Version 3.5.0 - Dec 22, 2021 </p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>creation of homepage and changelogs</li>
+                                <li>countdown filler</li>
+                                <li>sefari, firefox and ms browser fixes</li>
+                                <li>footer refresh</li>
+                                <li>header refresh</li>
+                                <li>image fix for different screen sizes on coc</li>
+                                <li>improved absoolute search</li>
+                                <li>all page borders redesign</li>
+                                <li>secondary background colour (#191e27)</li>
+                                <li>header changes</li>
+                                <li>psychology brainstorms</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <section class="note" style="margin-top: 9px;">
+                    <!-- <p class="noteheader"> note </p> -->
+                    <ol>
+                        <ul>
+                            <li> any changelog notes made prior to Version 3.5.0 may be inaccurate </li>
+                        </ul>
+                    </ol>
+                </section>
+
+                <div id="3.4.5" class="child">
+                    <p class="subheadings">Version 3.4.5 - Dec 6, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li> fixed search </li>
+                                <li> fixed id and class errors </li>
+                                <li> clean JS </li>
+                                <li> psychology index </li>
+                                <li> deleting "cringe" </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="3.4.4" class="child">
+                    <p class="subheadings">Version 3.4.4 - Nov 26, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li> minor profile fixes </li>
+                                <li> change of hosting </li>
+                                <li> removed viewbox for sefari </li>
+                                <li> fixed hyperlinks in redirects </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="3.4.3" class="child">
+                    <p class="subheadings">Version 3.4.3 - Nov 24, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li> image correction for mobile viewing </li>
+                                <li> clean profile and countdown css </li>
+                                <li> enabled css and footer on lost.html </li>
+                                <li> added revolt </li>
+                                <li> fix gdev, revolt and cashapp pngs </li>
+                                <li> fix redirect links </li>
+                                <li> fix css loading on redirects </li>
+                                <li> fixed border width </li>
+                                <li> fixed track bar </li>
+                                <li> fixed hyperlink tag font size </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="3.4.2" class="child">
+                    <p class="subheadings">Version 3.4.2 - Nov 21, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li> grammar corrections </li>
+                                <li> theme-color corrections in embeds and tabs for paypal, github, cashapp </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="3.4.1" class="child">
+                    <p class="subheadings">Version 3.4.1 - Nov 21, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li> readme.md </li>
+                                <li> rewriting notes </li>
+                                <li> cleaning css </li>
+                                <li> fixing values, ids and alts </li>
+                                <li> fixing cashapp and paypal </li>
+                                <li> rewording of navigation </li>
+                                <li> fixed footer padding </li>
+                                <li> fixed projects page </li>
+                                <li> fixed search function </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <div id="3.4.0" class="child">
+                    <p class="subheadings">Version 3.4.0 - Nov 18, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>profile page design refresh! (had been the same design since v2)</li>
+                                <li>creation of changelogs - anything prior to version 3.4.0 may be inaccurate or have
+                                    missing details</li>
+                                <li>addition of paypal and cashapp</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+
+                <div id="3.3.2" class="child">
+                    <p class="subheadings">Version 3.3.2 - Nov 21, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>theme-color corrections for embeds and others in redirects</li>
+                                <li>mobile button fixed</li>
+                                <li>tab button fixed</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+
+                <div id="3.3.1" class="child">
+                    <p class="subheadings">Version 3.3.1 - Nov 21, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>changes to projects.html</li>
+                                <li>successfully loading projects</li>
+                                <li>cleaning profile.css</li>
+                                <li>working search</li>
+                                <li>cashapp</li>
+                                <li>paypal</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.3.0" class="child">
+                    <p class="subheadings"> Version 3.3.0 - Nov 18, 2021 </p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>reorganise all files</li>
+                                <li>added date of birth to basic info </li>
+                                <li>added links to basic info</li>
+                                <li>temp working lost page</li>
+                                <li>creation of countdown page</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.2.3" class="child">
+                    <p class="subheadings">Version 3.2.3 - Nov 6, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>cleaned age.js code </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.2.2" class="child">
+                    <p class="subheadings">Version 3.2.2 - Oct 24, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>basicinfo integrated throughout site </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.2.1" class="child">
+                    <p class="subheadings">Version 3.2.1 - Oct 13, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>redirects added</li>
+                                <li>rebrand.</li>
+                                <li>link changes</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.2.0" class="child">
+                    <p class="subheadings">Version 3.2.0 - Oct 1, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>integrated old website code</li>
+                                <li>link changes</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.1.1" class="child">
+                    <p class="subheadings">Version 3.1.1 - Sep 20, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>formatted footer</li>
+                                <li>meta data changes</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.1.0" class="child">
+                    <p class="subheadings">Version 3.1.0 - Sep 20, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>Headers and Footers implemented throughout site</li>
+                                <li>deletion of unnecessary code</li>
+                                <li>link changes</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.0.2" class="child">
+                    <p class="subheadings">Version 3.0.2 - Sep 19, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>back button fix in construction page</li>
+                                <li>age.js created - working code</li>
+                                <li>editing profile.html - age.js implemented</li>
+                                <li>css further cleaned</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.0.1" class="child">
+                    <p class="subheadings">Version 3.0.1 - Sep 18, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>- css cleaning</li>
+                                <li>- fixing images</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+
+                <div id="3.0.0" class="child">
+                    <p class="subheadings">Version 3.0.0 - Sep 18, 2021</p>
+                    <div>
+                        <ol>
+                            <ul>
+                                <li>reorganisation of files</li>
+                                <li>purge of files</li>
+                                <li>about page kept</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p id="leftist">&#169; 2020 - <span id="cpyear">n</span> woe / All rights reserved.</p>
+        <p id="rightist"><a target=blank href="https://github.com/mir-woe/mir-woe.github.io">source code</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="note" style="margin-top: 10px;">
         <div>
         <p class="noteheader"> note </p>
         <p> 
@@ -63,12 +508,12 @@
         </div>
         
     </section>
-   
-   <script src="../misc/JSbs/home.js"></script>
-   <script src="../misc/JSbs/basicinfo.js"></script>
-        <script>
+    -->
+    <script src="../misc/JSbs/basicinfo.js"></script>
+    <script src="../misc/JSbs/home.js"></script>
+    <script>
         //    window.location.href = "../coc.html";    
-        </script>
-    </body>
-    
-    </html>
+    </script>
+</body>
+
+</html>

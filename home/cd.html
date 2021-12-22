@@ -40,10 +40,64 @@
 
 <body onload="myFooters();myHeaders()">
     
-       
+<style>
+    .large{
+        font-size: calc(20px + 6 * ((100vw - 300px) / 1000)) !important;
+    }
+</style>
+<section id="PageContentEncompass">
 
-    <section>
-        <div> <p> days till <span id="newage">[error]</span>th birthday </p></div>
+    <section class="note">
+        <!-- <p class="noteheader"> note </p> -->
+        <ol>
+            <ul>
+                <li> this page will be done in the next update. </li>
+                <li> the way it looks is not the final form. </li>
+                <li> buttons do not work. </li>
+            </ul>
+        </ol>
+    </section>
+
+    <section id="PageContentEncompass">
+        <!-- <div> <p> days till <span id="newage">[error]</span>th birthday </p></div> -->
+        <div> 
+            <!-- 
+            title
+            timer: day / hour / min / sec 
+            buttons: dim / full screen 
+            -->
+
+            <!-- title -->
+            <div> 
+            <p> days till <span id="newage" class="large">[error]</span>th birthday </p>
+            </div>
+
+            <!-- day -->
+            <div>
+            <p> <span id="dayss" class="large">[error]</span>d</p>
+            </div>
+
+            <!-- hour  -->
+            <div>
+            <p> <span id="hourss" class="large">[error]</span>h</p>
+            </div>
+
+            <!-- min -->
+            <div>
+            <p> <span id="minutess" class="large">[error]</span>m</p>
+            </div>
+
+            <!-- sec -->
+            <div>
+            <p> <span id="secondss" class="large">[error]</span>s</p>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                <button> dim </button>
+                <button> full screen </button>
+            </div>
+        </div>
     </section>
 
     <script>

@@ -1,137 +1,169 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title>a contents page for those lost folk</title>
 
-        <meta charset="UTF-8">
+<head>
+    <title>a contents page for those lost folk</title>
 
-        <meta name="Creator" content="ikhlas">
-        <meta name="keywords" content="aqwsdfghjkwoksdjcfienbfinvinrinvi">
-        <meta name="Description" content="a contents page for those lost folk">
+    <meta charset="UTF-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta data-n-head="true" name="theme-color" content="#45a5a3">
+    <meta name="Creator" content="ikhlas">
+    <meta name="keywords" content="aqwsdfghjkwoksdjcfienbfinvinrinvi">
+    <meta name="Description" content="a contents page for those lost folk">
 
-        <meta property="og:title" content="are you lost?">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://mir-woe.github.io/">
-        <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-        <meta property="og:description" content="a contents page for those lost folk">
-        <meta property="og:site_name" content="mir-woe">
-        
-        <meta name="twitter:card" content="are you lost?">
-        <meta name="twitter:site" content="@publisher_handle">
-        <meta name="twitter:title" content="are you lost?">
-        <meta name="twitter:description" content="a contents page for those lost folk">
-        <meta name="twitter:creator" content="@author_handle">
-        <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-       
-        <meta itemprop="name" content="are you lost?">
-        <meta itemprop="description" content="a contents page for those lost folk">
-        <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
-        
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="misc/images/icons/icon.png"> 
-    </head>
-    <script src="misc/JSbs/footer.js"></script>
-    <body onload="myFooters()">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta data-n-head="true" name="theme-color" content="#45a5a3">
 
-        <style>
-            #headingsec, .note, #bottom, #leftist{
-                -webkit-touch-callout: none !important;
-                -webkit-user-select: none !important;
-                -khtml-user-select: none !important;
-                -moz-user-select: none !important;
-                -ms-user-select: none !important;
-                user-select: none !important;
-            }
-            body{
-                -webkit-touch-callout: text;
-                -webkit-user-select: text;
-                -khtml-user-select: text;
-                -moz-user-select: text;
-                -ms-user-select: text;
-                user-select: text;
-            }
-    
-        </style>
+    <meta property="og:title" content="are you lost?">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mir-woe.github.io/">
+    <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+    <meta property="og:description" content="a contents page for those lost folk">
+    <meta property="og:site_name" content="mir-woe">
+
+    <meta name="twitter:card" content="are you lost?">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="are you lost?">
+    <meta name="twitter:description" content="a contents page for those lost folk">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+
+    <meta itemprop="name" content="are you lost?">
+    <meta itemprop="description" content="a contents page for those lost folk">
+    <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="misc/images/icons/icon.png">
+</head>
+<script src="misc/JSbs/footer.js"></script>
+
+<body onload="myFooters()">
 
 
-    <section id="headingsec"> 
-        <p style="font-size:61px !important;margin:0px; color: #7eddd3;"> Are you lost? </p> <input id="seachbutton" type="text" id="Search" placeholder="search" size="20" /> <button onclick="Find ();">&gt;</button>    
-     </section>
+    <style>
+        #headingsec,
+        .note,
+        #bottom,
+        #leftist {
+            -webkit-touch-callout: none !important;
+            -webkit-user-select: none !important;
+            -khtml-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+        }
+
+        body {
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -khtml-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        #headingsec{
+            position: relative !important;
+        }
+
+        #searchloco {
+            display: grid;
+            width: 100%;
+        }
+
+        .fixedsearchscroll {
+            position: fixed;
+            top: 0;
+        }
+    </style>
+
+    <section style="height: 150px;">
+        <section id="headingsec" style="margin: 0">
+            <p style="font-size:61px !important;margin:0px; color: #7eddd3;"> lost? </p>
+        </section>
+
+        <section id="searchloco">
+            <div id="fixedsearch"><input type="text" id="Search" placeholder="search" size="20" /> <button
+                    id="seachbutton" onclick="Find ();"> search </button></div>
+        </section>
+    </section>
 
     <section id="PageContentEncompass">
 
-        <section class="note"> 
-            <p class="noteheader"> note </p>
-            <ol> 
-                <li> most pages are currently under construction so may be unavailable at the current moment of time </li>
-                <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore no css files or js files has been loaded. this is only available for convenience </li>
-                <li> pages in the old site may no longer work or load files as it wasn't built to last long term and is primarily css and html only </li>
+        <section class="note">
+            <!-- <p class="noteheader"> note </p> -->
+            <ol>
+                <ul>
+                    <li> most pages are currently under construction so may be unavailable at the current moment of time
+                    </li>
+                    <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore
+                        no css files or js files has been loaded. this is only available for convenience </li>
+                    <li> pages in the old site may no longer work or load files as it wasn't built to last long term and
+                        is primarily css and html only </li>
+                </ul>
             </ol>
         </section>
-        
-    
+
+
         <div class="lostsites child">
             <div>
-                    <p class="subheadings">new website  
-                        <!-- <button> collapse </button>    -->
-                    </p>
+                <p class="subheadings">new website
+                    <!-- <button> collapse </button>    -->
+                </p>
             </div>
-            
+
             <div>
                 <ul>
                     <li> <a href="home/home.html">home</a> </li>
-                    <li> <a href="home/profile.html">about</a> </li>
+                    <li> <a href="home/profile.html">profile</a> </li>
                     <li> <a href="dev/list.html">projects</a> </li>
                     <li> <a>lost? (current page)</a> </li>
                     <li> <a href="home/cd.html">countdown</a> </li>
                     <li> <a href="coc.html">construction</a> </li>
                     <li> <a href="misc\psych\index.html">psychology</a> </li>
-        
+
                 </ul>
             </div>
         </div>
-    
-        
-        <section class="child"></section>   
-    
-    
+
+
+        <section class="child"></section>
+
+
         <div class="lostsites child">
             <div>
-                <p class="subheadings">matsaki  
+                <p class="subheadings">matsaki
                     <!-- <button> collapse </button>    -->
                 <p>
             </div>
-    
+
             <div>
                 <ul>
                     <li> <a href="matsaki/index.html"> home </a> </li>
                 </ul>
             </div>
         </div>
-    
 
-        <section class="child"></section>   
-        
-    
+
+        <section class="child"></section>
+
+
         <div class="lostsites child">
             <div>
                 <p class="subheadings">old website
-                      <!-- <button> collapse </button>   -->
-                    </p>
+                    <!-- <button> collapse </button>   -->
+                </p>
             </div>
 
-            
-        <section class="note"> 
-            <ol> 
-                <ul><li> these page are frozen. many images or links may not work as they was intended when made </li></ul>
-            </ol>
-        </section>
-        
+
+            <section class="note">
+                <ol>
+                    <ul>
+                        <li> these page are frozen. many images or links may not work as they was intended when made
+                        </li>
+                    </ul>
+                </ol>
+            </section>
+
             <div>
                 <ul>
                     <li><a href="dev/old/index.html"> home </a></li>
@@ -141,13 +173,26 @@
                 </ul>
             </div>
         </div>
-    
+
     </section>
 
     <script>
      //   window.location.href = "coc.html";
     </script>
     <script src="misc/JSbs/search.js"></script>
-    </body>
-    </html>
-    
+
+    <script>
+        window.onscroll = function () { keepsearchloc() };
+
+        function keepsearchloc() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("searchloco").classList.add("fixedsearchscroll");
+
+            } else {
+                document.getElementById("searchloco").classList.remove("fixedsearchscroll");
+            }
+        }
+    </script>
+</body>
+
+</html>

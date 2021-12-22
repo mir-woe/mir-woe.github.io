@@ -13,11 +13,14 @@
   --white1: #e3e6eb;
 }
 
+html{scroll-behavior:smooth}
+
 body{
     background:var(--bg1);
     font-family: 'Noto Sans', sans-serif;
     padding: unset;
     margin:unset;
+    scroll-behavior: smooth;
     -webkit-touch-callout: none;
          -webkit-user-select: none;
          -khtml-user-select: none;
@@ -26,6 +29,7 @@ body{
          user-select: none;
 }
    
+
 @keyframes fadedown {
   0% {
     transform: translateY(-1%);
@@ -33,6 +37,11 @@ body{
   100% {
     transform: translateY(0);
   }
+}
+
+
+ol {
+  padding: 0px;
 }
 
 #PageContentEncompass{
@@ -70,23 +79,14 @@ body{
   border-radius: 10px;
   color: var(--bg1);
   width: -webkit-fill-available;
+  min-width: -moz-available;
+  width: fill-available;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* 
-    <section class="note"> 
-        <p class="noteheader"> note </p>
-        <ol> 
-            <li> </li>
-        </ol>
-    </section>
-     */
-
-
 .child{    
-  border: 2px solid;
   border-radius: 10px;
   width: 97%;
   height: 392px;
@@ -110,13 +110,6 @@ body{
   color: var(--accent1) !important;
 }
 
-#headingsec{
-  width:100%; 
-  height:90px;
-  border-bottom: 2px solid var(--accent1);
-  margin-bottom: 10px;
-}
-
 div{
   margin-left:auto;
   margin-right:auto;
@@ -137,12 +130,60 @@ section{
   color: var(--accent1);
 }
 
-header{
-  position: absolute;
-  top:0%;
+/* header */
+
+.navHome{grid-area: navOne;}
+.navProfile{grid-area: navTwo;}
+.navProjects{grid-area: navThree;}
+#lost{grid-area: lost}
+
+#logo{
+  font-size: 63px;
+  color:var(--accent1);
+  margin: 0px;
   width: 100%;
+  transition: 0.4s;
 }
 
+#headingsec{
+  width:100%; 
+  border-bottom: 2px solid var(--accent1);
+  background-color: var(--bg1);
+  position: fixed;
+  top:0%;
+}
+
+#JavaScriptHeaderContent{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.descheadingnav{
+  display: grid;
+  width: 100%;
+  grid-template-areas: 
+  'navOne navTwo navThree'
+  'lost lost lost';
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.tabheadingnav{
+  display: none;
+}
+
+#tabheadingnav-popup-trio{
+  display: flex;
+} 
+
+#lost:hover{color: var(--white1);}
+
+
+/* footer */
 footer{
   width: 100%;
   height: auto;
@@ -161,10 +202,15 @@ footer div{
 footer button{
   border:none !important;
   width: -webkit-fill-available !important;
+  width: fill-available !important;
+  min-width: -moz-available !important;
 }
 
 footer button:hover{
   width: -webkit-fill-available !important;
+  width: fill-available !important;
+  min-width: -moz-available !important;
+
 }
 
 footer p{
@@ -174,13 +220,10 @@ footer p{
   width: auto;
 }
 
-footer #rightist{
+footer a{
   font-size: 10px !important;
 }
 
-li a{
-  text-decoration: none;
-}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -221,18 +264,57 @@ img{
   -webkit-user-drag: none;
 }
 
-p, a{
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+p, a, pre, li a, select{
   color:var(--white1);
   font-family: 'Noto Sans', sans-serif;
   text-align: Center;
   transition:0.4s;
+  text-decoration: none;
 }
 
-p:hover, a:hover{
+ul {
+  padding-inline-start: 31px ;
+}
+li {
+  padding-right: 31px;
+}
+
+.note li {
+  color: var(--bg1) !important;
+}
+select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  background-color: transparent;
+  border: transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: var(--white1);
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;   
+} 
+
+option{
+  background-color: var(--bg2);
+  border-radius: 0px;
+}
+
+pre{
+  font-family: monospace !important;
+  text-align: left;
+}
+p:hover, a:hover, pre:hover{
   color: var(--accent1);
  }
  
+
 button{
   margin: 10px;
   padding: 10px;
@@ -251,10 +333,9 @@ button:hover{
   width: 110px;
 }
 
-#search{
+#Search{
   padding:10px;
   margin:10px;
-  width: 200px;
   border: 2px solid var(--accent1);
   border-radius: 10px;
   background-color: var(--bg1);
@@ -263,21 +344,13 @@ button:hover{
   outline: none;
 }
 
-#search:hover, #search:focus, #search:target{
-  /* width: 250px; */
+#Search:hover, #Search:focus, #Search:target{
   background-color: var(--bg2);
 }
 
 #seachbutton:hover{
   width: auto;
 }
-
-#logo{
-  font-size: 63px !important;
-  color:var(--accent1);
-  margin: 0px;
-}
-
 
 .brandimg{
   height: 40px;
@@ -294,61 +367,40 @@ button:hover{
   filter: grayscale(0%);
 }
 
-#tabheadingnav-popup{
-  display: none;
-  position: absolute;
-  padding-bottom: 10px;
-  border-bottom: solid;
-  width: -webkit-fill-available;
-  background-color: var(--bg1);
-  box-shadow: 10px 10px 100px 10px black;
-  z-index: 100000000000 ;
-}
-#tabheadingnav-popup button{
-  width: 140px !important;
-  border: none;
-  border-radius: 0;
-  border-left: solid;
-  border-right: solid;
-}
-
-#tabheadingnav-popup-trio{
-  display: flex;
-}
-
-#lost:hover{color: var(--white1);}
-
 
 @media only screen and (max-width: 600px){
 
-p, a{    
-  font-size: calc(12px + 6 * ((100vw - 320px) / 680))
-}
-    
-#noshow, #descheadingnav{
-  display: none;
-}
+  #logo{
+    text-align: center; 
+    font-size: 63px;
+  }
 
-#logo{
-  text-align: center; 
-  width: 100%; 
-}
+  p, a, li, select{    
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680))
+  }
+      
+  .tabheadingnav, .descheadingnav{
+    display: none !important;
+  }
 
-.penis{
-  width:100% !important;
-}
+  #JavaScriptHeaderContent{
+    display: block !important;
+  }
 
-#tabheadingnav{
-  display: none !important;
-}
 }
 
 @media only screen and (min-width: 600px){
 
-p, a{    
-  font-size: calc(14px + 6 * ((100vw - 320px) / 100000)) !important
-}
-      
+  #logo{
+    text-align: left;
+    padding-left: 15px;  
+    font-size: 63px;
+  }
+
+  p, a, pre, li, select{    
+    font-size: calc(14px + 6 * ((100vw - 320px) / 100000));
+  }
+        
   footer button{
     display: none !important;
   }
@@ -363,15 +415,6 @@ p, a{
     text-align: left;
   }
 
-  .pp p, .pp a{
-    margin-top: unset;
-    margin-bottom: unset;
-    margin-right: auto;
-    margin-left: auto;
-    padding: auto;
-    font-size: calc(20px + 6 * ((100vw - 320px) / 100000));
-  } 
-
   #noshow{
     display: block !important;
   }
@@ -380,14 +423,6 @@ p, a{
     font-size: calc(10px + 6 * ((100vw - 300px) / 100000)) !important ;
     margin: auto !important;
     color: var(--gray1);
-  }
-
-  #logo{
-    text-align: left;
-    padding-left: 15px;  
-  }
-  #tabheadingnav{
-    display: none;
   }
 }
 
@@ -399,22 +434,9 @@ p, a{
 } 
 
 @media only screen and (max-width: 877px){
-  #noshow, #descheadingnav{
-    display: none;
-  }
-  #tabheadingnav{
+
+  .headerTabOnlyFiller{
     display: block;
-  }
-  
-  #tabheadingnav button{
-    position: absolute;
-    right: 0;
-    margin-top: 24px;
-    width: auto;
-    border-radius: unset;
-    border-right: none;
-    border-bottom: none;
-    border-top: none;
   }
 
   #logo{
@@ -422,9 +444,60 @@ p, a{
     padding: 0;  
     width: 100%;
   }
-
-  .penis{
-    width: 100% !important;
+  
+  #tabheadingnavmenu{
+    display: block;
+    width: 100%;
   }
+
+  #tabheadingnavmenu > button, #tabheadingnavmenu > button:hover{
+    float: right;
+    width: auto;
+    border-radius: 0;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+  }
+
+  #tabheadingnav-popup{
+    display: none;
+    grid-area: nav;
+    padding-bottom: 10px;
+    /* display: grid; */
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: 
+    'begginnig midle finale'
+    'navOne navTwo navThree'
+    'lost lost lost';
+  }
+
+  #tabheadingnav-popup button{
+    width: 140px !important;
+    border: none;
+    border-radius: 0;
+    border-left: solid;
+    border-right: solid;
+  }
+  
+  #JavaScriptHeaderContent{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: 
+    'begginnig middle finale'
+    'nav nav nav';
+    align-items: center;
+  }
+
+  .descheadingnav{
+    display: none;
+  }
+
+  
+  /* box-shadow: 10px 10px 100px 10px black; */
+
+  #noshow{
+    display: none;
+  }
+  
   
 }

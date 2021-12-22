@@ -1,14 +1,13 @@
 function myHeaders() {
     var header = document.createElement("HEADER");
     header.setAttribute("id", "top");
-    header.innerHTML = '<section id="headingsec"> <div style="max-width:1500px"> <div style="width:70%;float:left;height: -webkit-fill-available;" class="penis"> <section class="pp"> <p id="logo"> woe. </p></section> </div><div id="tabheadingnav"> <button onmouseover="showtabheadingnav()"> menu </button> </div><div id="tabheadingnav-popup" onmouseover="showtabheadingnav()" onmouseout="hidetabheadingnav()"> <div id="tabheadingnav-popup-trio"> <div><a href="https://mir-woe.github.io/home/home.html"> <button> home </button></a> </div><div> <a href="https://mir-woe.github.io/home/profile.html"><button> about </button></a> </div><div><a href="https://mir-woe.github.io/dev/list.html"> <button> respos </button></a> </div></div><div> <div> <a id="lost" href="https://mir-woe.github.io/lost"> can\'t find the page you\'re looking for? </a> </div></div></div><div id="descheadingnav"> <table style="width:30%; float:right; height:60px;"> <tr> <th style="font-size:30px"><a href="https://mir-woe.github.io/home/home.html">home</a></th> <th style="font-size:30px"><a href="https://mir-woe.github.io/home/profile.html">about</a></th> <th style="font-size:30px"><a href="https://mir-woe.github.io/dev/list.html">respos</a></th> </tr><table style="width:30%; float:right; height:30px;"> <tr> <th style="font-size:10px; padding-bottom:13px"> <a id="lost" href="https://mir-woe.github.io/lost"> can\'t find the page you\'re looking for?</a> </th> </tr></table> </table> </div></div></section>';
+    header.innerHTML = '<section id="headingsec"><div id="JavaScriptHeaderContent"><p id="logo"> woe. </p><div class="descheadingnav"><a class="navHome" href="https://mir-woe.github.io/home/home.html">home</a><a class="navProfile" href="https://mir-woe.github.io/home/profile.html">profile</a><a class="navProjects" href="https://mir-woe.github.io/dev/list.html">projects</a><a id="lost" href="https://mir-woe.github.io/lost"> can\'t find the page you\'re looking for?</a></div><div class="headerTabOnlyFiller tabheadingnav"></div><div id="tabheadingnavmenu" class="tabheadingnav"><button onmouseover="showtabheadingnav()"> menu </button> </div><div class="tabheadingnav" id="tabheadingnav-popup" onmouseover="showtabheadingnav()" onmouseout="hidetabheadingnav()"><a class="navHome" href="https://mir-woe.github.io/home/home.html"> <button> home </button></a><a class="navProfile" href="https://mir-woe.github.io/home/profile.html"><button> profile </button></a><a class="navProjects" href="https://mir-woe.github.io/dev/list.html"> <button> projects </button></a><a id="lost" href="https://mir-woe.github.io/lost"> can\'t find the page you\'re looking for?</a></div></div></section>';
     document.body.appendChild(header);
-    document.body.style.paddingTop = ("100px");
+    document.body.style.paddingTop = ("90px");
     
 }
 
 function showtabheadingnav(){
-    document.getElementById("tabheadingnav-popup").style.display = "grid";
     document.getElementById("tabheadingnav-popup").style.display = "grid";
 }
 

@@ -48,25 +48,38 @@
                 -ms-user-select: text;
                 user-select: text;
     }
+
+    
+    #searchloco {
+            display: grid;
+            width: 100%;
+        }
+
+    .fixedsearchscroll {
+        position: fixed;
+        top: 0;
+    }
 </style>
 <body onload="myFooters();myHeaders()">
+    <section id="searchloco">
+        <div id="fixedsearch"><input type="text" id="Search" placeholder="search" size="20" /> <button
+                id="seachbutton" onclick="Find ();"> search </button></div>
+    </section>
 
 
     <section id="PageContentEncompass">
         
         <section class="note"> 
-            <p class="noteheader"> note </p>
-            <ol> 
-                <li> most sub-pages are currently under construction so may be unavailable at the current moment of time </li>
+            <!-- <p class="noteheader"> note </p> -->
+            <ol> <ul>
+                <!-- <li> most sub-pages are currently under construction so may be unavailable at the current moment of time </li> -->
+                <li> i haven't even done anything yet lel </li>
                 <li> update rate depends on my work ethic </li>
                 <li> content here will only be available whilst I'm still doing psychology at school. Considering there's 9 spreads for memory alone once all topics are accounted for that's a lot of storage </li>
-            </ol>
+            </ul></ol>
         </section>
         
 
-        <div style="margin: auto;width: fit-content;">
-            <input type="text" id="Search" placeholder="search" size="20"/> <button id="seachbutton" onclick="Find ();"> search </button>
-        </div>
 
         <a href="memory.html"> <button style="width: 100%;"> memory </button> </a>
         <a href=""> <button style="width: 100%;"> attachment </button> </a>
@@ -99,6 +112,18 @@
         // window.location.href = "../coc.html";
     </script>
 
+    <script>
+        window.onscroll = function () { keepsearchloc() };
+
+        function keepsearchloc() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("searchloco").classList.add("fixedsearchscroll");
+
+            } else {
+                document.getElementById("searchloco").classList.remove("fixedsearchscroll");
+            }
+        }
+    </script>
 </body>
 <script src=".. /../misc/JSbs/basicinfo.js"></script>
 <script src="../../misc/JSbs/search.js"></script>

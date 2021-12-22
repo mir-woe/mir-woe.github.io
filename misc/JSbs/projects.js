@@ -42,7 +42,6 @@ for (let [key, value] of Object.entries(IDs)) {
     }
 
     GitHubLink = document.createElement("DIV")
-    GitHubLink.style.borderTop = 'solid'
     section.appendChild(GitHubLink);
 
     if (value[1] != "null" && value[1] != undefined){

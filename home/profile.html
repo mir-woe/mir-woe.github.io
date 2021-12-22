@@ -31,7 +31,6 @@
     <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../home/profile.css">
     <link rel="icon" href="../misc/images/icons/icon.png">
 
 </head>
@@ -39,8 +38,179 @@
 <script src="../misc/JSbs/header.js"></script>
 
 <script src="../misc/JSbs/footer.js"></script>
+
 <body onload="myFooters();myHeaders()">
 
+    <style>
+        @import url('../style.css');
+
+        .profile_header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(../misc/images/icons/banner.png);
+            background-size: cover;
+            border-radius: 10px 10px 0 0;
+            background-position: center;
+            background-color: var(--secondary-background);
+        }
+
+        .profile {
+            gap: 16px;
+            width: fit-content;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .images_daddy {
+            flex-shrink: 0;
+            height: 80px;
+            width: 80px;
+        }
+
+        .images_daddy img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1000px;
+        }
+
+        .profile .username {
+            flex-grow: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            color: var(--white1);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .profile_tabs {
+            gap: 8px;
+            display: flex;
+            padding: 0 1.5em;
+            font-size: .875rem;
+        }
+
+        #profile_tab_about {
+            color: var(--accent1);
+            border-bottom: 2px solid var(--accent1);
+        }
+
+        .profile_tabs>div {
+            padding: 8px;
+            color: var(--white1);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom .4s;
+        }
+
+        .about_subheadings {
+            font-size: calc(16px + 6 * ((100vw - 100000px) / 100000)) !important;
+            color: var(--gray1);
+            margin-bottom: 0px;
+        }
+
+        .about_info {
+            margin-top: 0px;
+        }
+
+        #redc {
+            overflow-y: hidden;
+            overflow-x: scroll;
+            display: flex;
+        }
+
+        #agebutton {
+            padding: 2px 2px 2px 2px;
+            margin: 2px 0 0 0;
+            width: auto !important;
+            color: var(--accent1);
+        }
+
+        #agebutton:hover {
+            color: var(--bg2);
+        }
+
+        #redc img {
+            margin: 10px;
+        }
+
+
+        .socials {
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -khtml-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        .mysocials {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            padding: 5px;
+            gap: 5px;
+        }
+
+        #birthday {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: 0s;
+            z-index: 10;
+            display: none;
+            height: auto;
+            width: 60%;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 0 0 0px 0px, 70px -60px 100px black, 70px 60px 100px black, -70px 60px 100px black, -70px -60px 100px black;
+            background-color: var(--bg1);
+        }
+
+        #birthday button {
+            padding: 0px 10px 0px 10px;
+        }
+
+        #birthday button:hover {
+            width: auto;
+        }
+
+        #birthday p {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .profile {
+                display: block;
+            }
+
+            #makes_name_centered_on_pc {
+                display: none;
+            }
+
+            #birthday {
+                width: 90%;
+            }
+
+            #birthday div,
+            #birthday a {
+                display: contents;
+                text-decoration: none;
+            }
+
+            #birthday button {
+                padding: 10px;
+                border-right: none;
+                border-left: none;
+                border-radius: 0;
+                margin: 10 10 0 10;
+            }
+        }
+    </style>
     <section id="PageContentEncompass">
 
 
@@ -49,14 +219,14 @@
             <section style="border-bottom: 2px solid; height: 150px; display: initial;">
                 <div>
                     <div class="profile_header">
-                        
+
                         <div class="profile">
-                            
+
                             <div class="images_daddy">
-                                    <img src="../misc/images/icons/pfp.png" draggable="false" height="100%" width="100%">
+                                <img src="../misc/images/icons/pfp.png" draggable="false" height="100%" width="100%">
                             </div>
                             <!-- <div style="background-image: url(../misc/images/icons/pfp.png); height: 80px; width: 80px; border-radius: 1000px; background-position: center;background-repeat: no-repeat;background-size: cover;"> -->
-                            
+
                             <div class="username"><span id="ownername">woe</span></div>
 
                             <div class="images_daddy" id="makes_name_centered_on_pc">
@@ -82,7 +252,8 @@
                 <div id="about">
                     <p class="about_subheadings">age/dob:</p>
                     <p class="about_info">
-                        <button onclick="showagebutton()" id="agebutton"> <span id="age">[error]</span> years old ¦ <span id="dob">[error]</span> </button>
+                        <button onclick="showagebutton()" id="agebutton"> <span id="age">[error]</span> years old ¦
+                            <span id="dob">[error]</span> </button>
                     </p>
 
                     <p class="about_subheadings">current education level/subjects: </p>
@@ -97,68 +268,105 @@
 
                     <p class="about_subheadings">other hobbies: </p>
                     <p class="about_info">
-                        Drawing (Traditional, Learning digital), Learning animation, Gaming
-                        (Primarily action-adventure, rpg, sandbox), Reading (Novels, Light Novels, Manga, Manhwa,
-                        Manhua)
+                        Drawing (Traditional, Learning digital) •
+                        Learning animation •
+                        Gaming (Primarily action-adventure, rpg, sandbox) •
+                        Reading (Novels, Light Novels, Manga, Manhwa, Manhua)
                     </p>
 
-                    <p class="about_subheadings">profile picture by <a style="font-size: inherit !important;" target="blank" href="https://www.wataboku.com">wataboku</a> & background from <a style="font-size: inherit !important;" target="blank" href="https://anilist.co/manga/100994/Jigokuraku/">Jigokuraku</a></p>
 
+                    <p class="about_subheadings">my spotify wrapped: </p>
+                    <p class="about_info">
+                        Top artists: Jay Kays •
+                        Top song: BOTTOME OF THE BOTTLE by Jay Kays •
+                        Top genre: sad rap •
+                        My Minutes Listened: 99186
+                    </p>
+
+
+                    <p class="about_subheadings">profile picture by <a style="font-size: inherit !important;"
+                            target="blank" href="https://www.wataboku.com">wataboku</a> & background from <a
+                            style="font-size: inherit !important;" target="blank"
+                            href="https://anilist.co/manga/100994/Jigokuraku/">Jigokuraku</a> & view full spotify stats
+                        <a style="font-size: inherit !important;"
+                            href="https://campaign-service.spotifycdn.com/share-cards/e95095df7ae141ef85fa82ed63c87bc1-1200x630.jpeg"
+                            target="blank"> here </a>
+                    </p>
                 </div>
 
+
                 <!-- socials - hidden default-->
-                <div id="socials"style="display: none;flex-wrap: wrap;" loading="lazy">
+                <div id="socials" style="display: none;flex-wrap: wrap;" loading="lazy">
 
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/github.html"> <img src="../misc/images/socials/github.png" alt="github" id="github" class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/github.html"> <img
+                                src="../misc/images/socials/github.png" alt="github" id="github" class="brandimg seczy">
+                        </a>
                         <p class="socials"><span id="gitname">[error]</span></p>
                     </div>
-                    
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/gdev.html"> <img src="../misc/images/socials/gdev.png" alt="gdev" id="gdev"  class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/gdev.html"> <img
+                                src="../misc/images/socials/gdev.png" alt="gdev" id="gdev" class="brandimg seczy"> </a>
                         <p class="socials"><span id="gdevname">[error]</span></p>
                     </div>
-                    
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/twitch.html"> <img src="../misc/images/socials/twitch.png" alt="twitch" id="twitch" class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/twitch.html"> <img
+                                src="../misc/images/socials/twitch.png" alt="twitch" id="twitch" class="brandimg seczy">
+                        </a>
                         <p class="socials"><span id="ttvname">[error]</span></p>
                     </div>
-            
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/youtube.html"> <img src="../misc/images/socials/youtube.png" alt="youtube" id="youtube" class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/youtube.html"> <img
+                                src="../misc/images/socials/youtube.png" alt="youtube" id="youtube"
+                                class="brandimg seczy"> </a>
                         <p class="socials"><span id="ytname">[error]</span></p>
                     </div>
-            
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/spotify.html"> <img src="../misc/images/socials/spotify.png" alt="spotify" id="spotify" class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/spotify.html"> <img
+                                src="../misc/images/socials/spotify.png" alt="spotify" id="spotify"
+                                class="brandimg seczy"> </a>
                         <p class="socials"><span id="spotname">[error]</span></p>
                     </div> </a>
-            
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="https://discordapp.com/users/401359212787007490/"> <img src="../misc/images/socials/discord.png" alt="discord" id="discord" class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="https://discordapp.com/users/401359212787007490/"> <img
+                                src="../misc/images/socials/discord.png" alt="discord" id="discord"
+                                class="brandimg seczy"> </a>
                         <p class="socials"><span id="discname">[error]</span></p>
                     </div>
-            
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/tg.html"> <img src="../misc/images/socials/telegram.png" alt="telegram" id="telegram"  class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/tg.html"> <img
+                                src="../misc/images/socials/telegram.png" alt="telegram" id="telegram"
+                                class="brandimg seczy"> </a>
                         <p class="socials"><span id="tgname">[error]</span></p>
                     </div>
 
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="https://revolt.chat"> <img src="../misc/images/socials/revolt.png" alt="revolt" id="revolt"  class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="https://revolt.chat"> <img
+                                src="../misc/images/socials/revolt.png" alt="revolt" id="revolt" class="brandimg seczy">
+                        </a>
                         <p class="socials"><span id="revoltname">[error]</span></p>
                     </div>
-                  
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/paypal.html"> <img src="../misc/images/socials/paypal.png" alt="paypal" id="paypal"  class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/paypal.html"> <img
+                                src="../misc/images/socials/paypal.png" alt="paypal" id="paypal" class="brandimg seczy">
+                        </a>
                         <p class="socials"><span id="ppname">[error]</span></p>
                     </div>
-                    
+
                     <div class="mysocials">
-                        <a class="socials" target="blank" href="../misc/cashapp.html"> <img src="../misc/images/socials/cashapp.png" alt="cashapp" id="cashapp"  class="brandimg seczy"> </a>
+                        <a class="socials" target="blank" href="../misc/cashapp.html"> <img
+                                src="../misc/images/socials/cashapp.png" alt="cashapp" id="cashapp"
+                                class="brandimg seczy"> </a>
                         <p class="socials"><span id="caname">[error]</span></p>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -166,37 +374,38 @@
 
 
             <!-- show drawings div -->
-            <section style="border-top: 2px solid;">
+            <section style="border-top: 2px solid var(--gray2);">
                 <div id="redc" style="display: none;">
                     <img src="../misc/images/drawings/drawing1.jpg" loading="lazy">
                     <img src="../misc/images/drawings/drawing2.jpg" loading="lazy">
                 </div>
-                <div style="cursor: pointer;" onclick="showDrawings()">    
-                    <p style=" color: var(--gray2);text-align:center"> click to <span id="drawings_button_variable">show</span> drawings </p>
+                <div style="cursor: pointer;" onclick="showDrawings()">
+                    <p style=" color: var(--gray2);text-align:center"> click to <span
+                            id="drawings_button_variable">show</span> drawings </p>
                 </div>
             </section>
-            
+
             <script>
-                function showDrawings(){
-                    if (document.getElementById("redc").style.display == "none"){
-                        document.getElementById("drawings_button_variable").textContent = "hide" ;
-                        document.getElementById("redc").style.display = "flex" ;
-                    } else{
-                        document.getElementById("drawings_button_variable").textContent = "show" ;
-                        document.getElementById("redc").style.display = "none" ;
+                function showDrawings() {
+                    if (document.getElementById("redc").style.display == "none") {
+                        document.getElementById("drawings_button_variable").textContent = "hide";
+                        document.getElementById("redc").style.display = "flex";
+                    } else {
+                        document.getElementById("drawings_button_variable").textContent = "show";
+                        document.getElementById("redc").style.display = "none";
                     }
                 }
-                
-                
+
+
                 var aboutButton = document.getElementById('profile_tab_about')
-                var socialsButton = document.getElementById('profile_tab_socials') 
+                var socialsButton = document.getElementById('profile_tab_socials')
                 var about = document.getElementById('about')
-                var socials = document.getElementById('socials') 
+                var socials = document.getElementById('socials')
 
-//                 color: var(--accent1);
-//    border-bottom: 2px solid var(--accent1);
+                //                 color: var(--accent1);
+                //    border-bottom: 2px solid var(--accent1);
 
-                function socialsshow(){
+                function socialsshow() {
                     socials.style.display = "flex";
                     about.style.display = "none";
                     socialsButton.style.color = "var(--accent1)";
@@ -204,8 +413,8 @@
                     socialsButton.style.borderBottom = "2px solid var(--accent1)";
                     aboutButton.style.borderBottom = "2px solid transparent";
                 }
-                
-                function aboutshow(){
+
+                function aboutshow() {
                     about.style.display = "block";
                     socials.style.display = "none";
                     socialsButton.style.color = "var(--white1)";
@@ -213,11 +422,11 @@
                     socialsButton.style.borderBottom = "2px solid transparent";
                     aboutButton.style.borderBottom = "2px solid var(--accent1)";
                 }
-                
+
             </script>
 
 
-            
+
             <div id="birthday">
                 <div>
                     <a href="cd.html"><button> countdown page</button></a>
@@ -230,19 +439,12 @@
             </div>
 
 
-            
+
         </section>
 
 
 
 
-
-
-
-
-
-
-         
 </body>
 <script src="../misc/JSbs/age.js"></script>
 <script src="../misc/JSbs/basicinfo.js"></script>
