@@ -830,6 +830,10 @@
     }
     
     /* Invite to server */
+    .theme-dark .contentWrapper-3WC1ID{
+        background-color: var(--background-primary);
+    }
+        
     #app-mount .lookOutlined-3sRXeN.colorGreen-29iAKY {
         color: var(--ikhlas2) !important;
         border-color: var(--ikhlas2) !important;
@@ -1375,6 +1379,10 @@
     .reaction-1hd86g.reactionMe-wv5HKu{
         background-color: var(--brand-experiment-15a) !important;
         border-color: var(--brand-experiment) !important;
+    }
+
+    .container-1If-HZ, .reactors-Blmlhw, .reactionSelected-1pqISm, .scroller-1-nKid{
+        background-color: var(--background-primary) !important;
     }
 
     /* servers */
