@@ -1247,6 +1247,7 @@
 
     /* webhooks and integrations */
     .cardPrimaryEditable-3KtE4g{
+        transition:0.4s;
         background-color: var(--ikhlas1);
         border: 1px solid var(--ikhlas3-hover) !important;
     }
