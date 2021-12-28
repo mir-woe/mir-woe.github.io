@@ -205,16 +205,11 @@
     }
     
     /* Borders */
-    /* .container-1D34oG {
-        border: 1px solid var(--ikhlas3-hover);
-    } */
     
     .platform-win .sidebar-2K8pFh {
         border-radius: 0;
     }
-    .applicationStore-1pNvnv {
-        border: 1px solid var(--ikhlas3-hover)
-    }
+
     .applicationStore-1pNvnv {
         background-color: transparent;
     }
@@ -1095,9 +1090,6 @@
         background-color: transparent;
     }
     
-    .featureImage-2L9kA0, .featureTitle-W5O6R1, .hero-EvfTTA{
-        margin: auto;
-    }
     /* Boost Server */
 
     .tierBody-24neog, .perksModal-12XaFK, .perk-3ia9RN, .theme-dark .tierUnlocked-2F5vd1, .theme-light .tierUnlocked-2F5vd1{
