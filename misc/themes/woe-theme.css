@@ -1244,3 +1244,9 @@
     .interactiveRow-3pCpPS:hover{
         background-color: var(--background-modifier-selected);
     }
+
+    /* webhooks and integrations */
+    .cardPrimaryEditable-3KtE4g{
+        background-color: var(--ikhlas1);
+        border: 1px solid var(--ikhlas3-hover) !important;
+    }
