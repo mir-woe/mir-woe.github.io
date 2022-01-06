@@ -52,6 +52,7 @@
     }
     
     .theme-dark, .theme-light {
+        --activity-card-background:var(--ikhlas1) !important;
         --spotify-color:var(--ikhlas2) !important;
         --header-primary: var(--ikhlas4) !important;
         --info-warning-background: var(--ikhlas5) !important;

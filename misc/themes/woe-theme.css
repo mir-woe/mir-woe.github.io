@@ -405,7 +405,7 @@
         background-color: var(--ikhlas1) !important;
     }
 
-    .card-o7rAq-, .addFriendInputWrapper-3PjsbB, .card-3uOWw3, .cardPrimary-1Hv-to, .accountList-33MS45, .connectedAccount-2Jb-Z0, .premiumInlineNotice-159eYs, .codeRedemptionRedirect-1wVR4b, .warning-3C2pOH, .notDetected-33MY4s, .notDetected-33MY4s{
+    .card-o7rAq-, .addFriendInputWrapper-3PjsbB, .card-3uOWw3, .cardPrimary-1Hv-to, .accountList-33MS45, .connectedAccount-2Jb-Z0, .premiumInlineNotice-159eYs, .codeRedemptionRedirect-1wVR4b, .warning-3C2pOH, .notDetected-33MY4s, .notDetected-33MY4s, .subscriptionsRedirectContainer-21LuI0, .noticeWithoutRightPadding-2GAvOv, .tierHeaderUnlocked-3lTDnP{
         background-color: var(--ikhlas1-hover) !important;
         border: 1px solid var(--ikhlas2) !important;
     }
@@ -1073,7 +1073,7 @@
         transition: background-color .17s ease,color .17s ease;
     }
     .lookInverted-2D7oAl.colorBrand-3pXr91 {
-        border-radius: 23px !important;
+        border-radius: 6px !important;
         background-color: var(--ikhlas2) !important;
         color: var(--header-primary) !important;
     }
@@ -1092,7 +1092,15 @@
     
     /* Boost Server */
 
-    .tierBody-24neog, .perksModal-12XaFK, .perk-3ia9RN, .theme-dark .tierUnlocked-2F5vd1, .theme-light .tierUnlocked-2F5vd1{
+    .tierHeaderLocked-3S508x, .tierBody-3aUxuc{
+        border: 1px solid var(--ikhlas3-hover);
+    }
+
+    .theme-dark .background-3xPPFc, .tierInProgress-3mBoXq{
+        color: var(--ikhlas3) !important;
+        background-color: var(--ikhlas3) !important;
+    }
+    .tierBody-24neog, .perksModal-12XaFK, .perk-3ia9RN, .theme-dark .tierUnlocked-2F5vd1, .theme-light .tierUnlocked-2F5vd1,  .tierHeaderLocked-3S508x, .tierBody-3aUxuc, .headerExpanded-2egR38, .changeDetails-2dV5gP{
         background-color: var(--ikhlas1) !important;
     }
     .tierMarkerBackground-3q29am{
@@ -1245,9 +1253,13 @@
         background-color: var(--background-modifier-selected);
     }
 
+    .subscribeTooltipWrapper-1JoUuw{
+        background-color: var(--background-primary);
+    }
     /* webhooks and integrations */
-    .cardPrimaryEditable-3KtE4g{
+    .cardPrimaryEditable-3KtE4g, .headerClickable-g5d9lT, .theme-dark .headerDefault-2D4Kcg{
         transition:0.4s;
         background-color: var(--ikhlas1);
         border: 1px solid var(--ikhlas3-hover) !important;
+        border-radius: 6px;
     }
