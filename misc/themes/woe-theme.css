@@ -1263,3 +1263,12 @@
         border: 1px solid var(--ikhlas3-hover) !important;
         border-radius: 6px;
     }
+
+    /* keyboard combos */
+    .keyboardShortcutsModal-mXAAbA{
+        background-color: var(--background-primary) !important;
+    }
+
+    .noBackground-3RR2Nx {
+        background-color: transparent !important;
+    }

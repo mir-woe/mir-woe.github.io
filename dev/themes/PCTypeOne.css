@@ -52,6 +52,7 @@
     }
     
     .theme-dark, .theme-light {
+        --toast-contents: var(--ikhlas1) !important;
         --activity-card-background:var(--ikhlas1) !important;
         --spotify-color:var(--ikhlas2) !important;
         --header-primary: var(--ikhlas4) !important;
