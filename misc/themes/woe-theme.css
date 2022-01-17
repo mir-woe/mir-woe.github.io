@@ -187,6 +187,7 @@ button {
     color: var(--ikhlas1);
 }
 
+.lookOutlined-3yKVGo.colorGrey-2iAG-B,
 .lookOutlined-3yKVGo.colorWhite-1H92hK,
 .lookFilled-yCfaCM.colorGrey-2iAG-B,
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS:disabled,
@@ -231,6 +232,7 @@ button {
     background-color: var(--ikhlas-red) !important;
 }
 
+.lookOutlined-3yKVGo.colorGrey-2iAG-B,
 .lookLink-15mFoz.colorPrimary-2AuQVo,
 .button-2b4VEQ.buttonSize-3QlBTl,
 .lookInverted-2mDUMi.colorBrand-I6CyqQ,
@@ -240,6 +242,7 @@ button {
     background: transparent !important;
 }
 
+.lookOutlined-3yKVGo.colorGrey-2iAG-B:hover,
 .lookLink-15mFoz.colorPrimary-2AuQVo:hover,
 .button-2b4VEQ.buttonSize-3QlBTl:hover,
 .lookInverted-2mDUMi.colorBrand-I6CyqQ:hover,
