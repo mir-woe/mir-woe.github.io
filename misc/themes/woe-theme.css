@@ -830,6 +830,14 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
     background: var(--ikhlas7);
 }
 
+.input-2g-os5.error-8r7mjf {
+    border-color: var(--ikhlas1-hover) !important;
+}
+
+.input-2g-os5.error-8r7mjf:focus {
+    border-color: var(--deprecated-text-input-border-hover) !important;
+}
+
 
 /* slider */
 
