@@ -541,6 +541,10 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
 
 /* misc */
 
+.footer-31IekZ>button {
+    margin: 5px;
+}
+
 .item-2idW98:hover {
     -webkit-transition: background-color .17s ease, color .17s ease;
     transition: background-color .17s ease, color .17s ease;
@@ -599,6 +603,10 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
 
 
 /* create server */
+
+.optionContainer-yOpaLq {
+    border: 1px solid var(--background-modifier-accent)
+}
 
 .templatesList-uohY49 {
     height: 335px;
