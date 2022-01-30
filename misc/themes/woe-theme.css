@@ -36,7 +36,8 @@ body {
 .powercord-toast .contents,
 .powercord-toast .contents .inner,
 .powercord-toast .header,
-.bd-addon-list .bd-addon-card {
+.bd-addon-list .bd-addon-card,
+.error-3AuLwi {
     background-color: var(--ikhlas1-hover) !important;
     border: 1px solid var(--ikhlas2) !important;
 }
@@ -845,6 +846,15 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
 
 .input-2g-os5.error-8r7mjf:focus {
     border-color: var(--deprecated-text-input-border-hover) !important;
+}
+
+.header-3i_Csh,
+.container-1S70rv .sectionTag-28mLyE {
+    background-color: var(--ikhlas1) !important;
+}
+
+.container-1S70rv {
+    border: 1px solid var(--ikhlas1-hover) !important;
 }
 
 
