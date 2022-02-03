@@ -47,6 +47,11 @@ body {
     border-bottom: thin solid var(--background-modifier-accent);
 }
 
+.top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG,
+.top-K_jibn .themed-2-lozF.item-3XjbnG:active {
+    background: transparent !important;
+}
+
 
 /* spotify controls (powercord)  */
 
@@ -1664,6 +1669,7 @@ div#popout_3247.layer-2aCOJ3 {
 .item-3XjbnG[aria-selected="true"] {
     background-color: var(--background-modifier-selected) !important;
     border-radius: 4px;
+    color: var(--ikhlas2) !important;
 }
 
 
