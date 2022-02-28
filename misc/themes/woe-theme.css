@@ -52,6 +52,14 @@ body {
     background: transparent !important;
 }
 
+.divider-3LgWDL {
+    border-color: var(--ikhlas2) !important;
+}
+
+div[role="tablist"]>.item-3XjbnG[aria-selected="true"] {
+    background-color: transparent !important;
+}
+
 
 /* spotify controls (powercord)  */
 
