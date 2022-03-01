@@ -9,24 +9,24 @@ var gdevlink = "https://developers.google.com/profile/u/mir_woe"
 
 
 var list = {
-    ownername : "woe",
-    webversion : "v3.5.0",
-    gitname : "@mir-woe",
-    gdevname : "@mir-woe",
-    ttvname : "@woe_ikhlas",
-    ytname : "@ιкнļαѕ",
-    spotname : "@MīR",
-    discname : "@woe#1863",
-    tgname : "@LeMiri",
-    revoltname : "@mir_woe",
-    ppname : "@hungrymiri",
-    caname : "£hungryikhlas"
+    ownername: "woe",
+    webversion: "v3.6.1",
+    gitname: "@mir-woe",
+    gdevname: "@mir-woe",
+    ttvname: "@woe_ikhlas",
+    ytname: "@ιкнļαѕ",
+    spotname: "@MīR",
+    discname: "@woe#1863",
+    tgname: "@LeMiri",
+    revoltname: "@mir_woe",
+    ppname: "@hungrymiri",
+    caname: "£hungryikhlas"
 };
 
 for (var value in list) {
-    try{     
+    try {
         document.getElementById(value).textContent = list[value];
-    } catch (err){
+    } catch (err) {
         console.log(err)
     }
 }
