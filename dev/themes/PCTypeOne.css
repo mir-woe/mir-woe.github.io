@@ -141,7 +141,7 @@ html {
     --brand-experiment-200: var(--ikhlas2);
     --brand-experiment-360: var(--ikhlas2);
     --brand-experiment-400: var(--ikhlas2);
-    --brand-experiment-500: var(--ikhlas5-hover);
+    --brand-experiment-500: var(--ikhlas2);
     --brand-experiment-560: var(--ikhlas2-hover);
     --brand-experiment-600: var(--ikhlas2-hover);
     --control-brand-foreground: var(--control-brand-foreground-new);

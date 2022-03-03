@@ -60,6 +60,18 @@ div[role="tablist"]>.item-3XjbnG[aria-selected="true"] {
     background-color: transparent !important;
 }
 
+#powercord-updater>.header,
+#powercord-updater>.contents,
+#powercord-updater>.contents>.inner,
+#powercord-updater>.buttons {
+    background-color: var(--ikhlas1) !important;
+    border: 0px !important;
+}
+
+#powercord-updater>.buttons {
+    border-radius: 0px 0px 5px 5px;
+}
+
 
 /* spotify controls (powercord)  */
 
@@ -1164,6 +1176,79 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
 
 /* Search page */
 
+.searchResultsWrap-5RVOkx .scroller-3iiyhZ,
+.searchResultsWrap-5RVOkx .channelName-3w2Y3c {
+    background-color: var(--background-tertiary) !important;
+}
+
+.react-datepicker,
+.react-datepicker__header {
+    background-color: var(--background-secondary) !important;
+}
+
+.react-datepicker__day:first-of-type {
+    border-radius: var(--border-radius-2) 0 0 var(--border-radius-2) !important;
+}
+
+.react-datepicker__day--fri {
+    border-radius: 0 var(--border-radius-2) var(--border-radius-2) 0;
+}
+
+.react-datepicker__day:last-of-type,
+.option-2KkUJO {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.react-datepicker__day {
+    background-color: var(--background-tertiary) !important;
+}
+
+.react-datepicker__day--selected:after {
+    background-color: var(--accent-color) !important;
+}
+
+.datePickerHint-17MnA8 .hintValue-1x-flY,
+.theme-dark .activeButton-LRWFC_ {
+    background-color: var(--accent-color) !important;
+    color: var(--interactive-selected) !important;
+}
+
+.focused-2FU0YH.queryContainer-RKFJW- {
+    background-color: var(--background-modifier-hover);
+}
+
+.queryContainer-RKFJW- {
+    margin: 10px;
+    border-radius: var(--border-radius-2);
+}
+
+.container-2McqkF {
+    background-color: var(--background-secondary-alt) !important;
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--background-tertiary);
+}
+
+.focused-2FU0YH {
+    background-color: var(--background-tertiary) !important;
+}
+
+.option-2KkUJO:after {
+    display: none;
+}
+
+.theme-dark .option-2KkUJO.selected-rZcOL- {
+    background-color: var(--background-modifier-hover);
+}
+
+.theme-dark .option-ayUoaq:after {
+    background: #00000000;
+}
+
+.theme-dark .searchFilter-2UfsDk,
+.theme-dark .searchAnswer-23w-CH {
+    background-color: var(--background-secondary);
+}
+
 .focused-2FU0YH,
 .dim-2Uxgxb span {
     background-color: var(--background-primary) !important;
@@ -1764,9 +1849,10 @@ div.container-3NTP7o {
 }
 
 
-/* stream preview */
+/* stream preview and tips*/
 
-.streamPreview-I7itZ6 {
+.streamPreview-I7itZ6,
+.upsellTooltipWrapper-1wqikQ {
     background: var(--ikhlas1) !important;
     box-shadow: 0 0 0 1px var(--ikhlas2-hover), 0 2px 10px 0 var(--ikhlas2-hover);
     -webkit-box-shadow: 0 0 0 1px var(--ikhlas2-hover), 0 2px 10px 0 var(--ikhlas2-hover);
