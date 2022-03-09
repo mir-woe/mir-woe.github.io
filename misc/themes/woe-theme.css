@@ -1244,9 +1244,9 @@ div.children-3xh0VB>div.iconWrapper-2awDjA>svg {
     background: #00000000;
 }
 
-.theme-dark .searchFilter-2UfsDk,
-.theme-dark .searchAnswer-23w-CH {
-    background-color: var(--background-secondary);
+.searchFilter-2UfsDk,
+.searchAnswer-23w-CH {
+    background-color: var(--ikhlas-spoiler) !important;
 }
 
 .focused-2FU0YH,
