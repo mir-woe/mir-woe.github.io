@@ -57,6 +57,7 @@
 
 .theme-dark,
 .theme-light {
+    --accent-color: var(--bdfdb-blurple);
     --toast-contents: var(--ikhlas1) !important;
     --activity-card-background: var(--ikhlas1) !important;
     --spotify-color: var(--ikhlas2) !important;
