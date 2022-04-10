@@ -51,7 +51,7 @@
             -ms-user-select: none !important;
             user-select: none !important;
         }
-
+        
         body {
             -webkit-touch-callout: text;
             -webkit-user-select: text;
@@ -60,16 +60,16 @@
             -ms-user-select: text;
             user-select: text;
         }
-
-        #headingsec{
+        
+        #headingsec {
             position: relative !important;
         }
-
+        
         #searchloco {
             display: grid;
             width: 100%;
         }
-
+        
         .fixedsearchscroll {
             position: fixed;
             top: 0;
@@ -82,8 +82,7 @@
         </section>
 
         <section id="searchloco">
-            <div id="fixedsearch"><input type="text" id="Search" placeholder="search" size="20" /> <button
-                    id="seachbutton" onclick="Find ();"> search </button></div>
+            <div id="fixedsearch"><input type="text" id="Search" placeholder="search" size="20" /> <button id="seachbutton" onclick="Find ();"> search </button></div>
         </section>
     </section>
 
@@ -95,10 +94,8 @@
                 <ul>
                     <li> most pages are currently under construction so may be unavailable at the current moment of time
                     </li>
-                    <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore
-                        no css files or js files has been loaded. this is only available for convenience </li>
-                    <li> pages in the old site may no longer work or load files as it wasn't built to last long term and
-                        is primarily css and html only </li>
+                    <li> despite this page being available it is nowhere near complete(because i'm too lazy) therefore no css files or js files has been loaded. this is only available for convenience </li>
+                    <li> pages in the old site may no longer work or load files as it wasn't built to last long term and is primarily css and html only </li>
                 </ul>
             </ol>
         </section>
@@ -119,7 +116,6 @@
                     <li> <a>lost? (current page)</a> </li>
                     <li> <a href="home/cd.html">countdown</a> </li>
                     <li> <a href="coc.html">construction</a> </li>
-                    <li> <a href="misc\psych\index.html">psychology</a> </li>
 
                 </ul>
             </div>
@@ -128,12 +124,11 @@
 
         <section class="child"></section>
 
-
+        <!-- 
         <div class="lostsites child">
             <div>
                 <p class="subheadings">matsaki
-                    <!-- <button> collapse </button>    -->
-                <p>
+                    <p>
             </div>
 
             <div>
@@ -141,7 +136,7 @@
                     <li> <a href="matsaki/index.html"> home </a> </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
 
         <section class="child"></section>
@@ -177,12 +172,14 @@
     </section>
 
     <script>
-     //   window.location.href = "coc.html";
+        //   window.location.href = "coc.html";
     </script>
     <script src="misc/JSbs/search.js"></script>
 
     <script>
-        window.onscroll = function () { keepsearchloc() };
+        window.onscroll = function() {
+            keepsearchloc()
+        };
 
         function keepsearchloc() {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

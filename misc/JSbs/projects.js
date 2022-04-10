@@ -7,7 +7,7 @@ var IDs = {
     Aliucord_Theme: ['My theme for Aliucord, a discord mobile client. <br>Consist of pink and purple accents with a gray background.', 'https://github.com/mir-woe/woe-mode-mobile'],
     Powercord_Theme: ['My theme for Powercord. <br>Has a gray background and alternating accents: Dark = Pink + Purple, Light = Red', 'https://github.com/mir-woe/PC-WoeMode'],
     Matsaki: ['Private discord bot in exclusive servers. That\'s the entire description for now...'],
-    Demonstation: ['demonsration of if I had images on any of these :sob:', 'null', '../misc/images/misc/demo.png', '../misc/images/misc/cocit.gif', '../misc/images/icons/pfp.png', '']
+    Demonstation: ['demonsration of if I had images on any of these :sob:', 'null', '../misc/images/misc/cocit.gif', '../misc/images/icons/pfp.png', '']
 }
 
 // stop being lazy and make .innerhtml into actual js dumb bitch ;-;
@@ -44,7 +44,7 @@ for (let [key, value] of Object.entries(IDs)) {
     GitHubLink = document.createElement("DIV")
     section.appendChild(GitHubLink);
 
-    if (value[1] != "null" && value[1] != undefined){
+    if (value[1] != "null" && value[1] != undefined) {
         GitHubLink.innerHTML += `
         <a class="socials" target="blank" href="${value[1]}"><img src="../misc/images/socials/github.png" alt="${key}_Link" class="brandimg"></a>
         `
@@ -100,7 +100,3 @@ for (let [key, value] of Object.entries(IDs)) {
 //         console.log(err)
 //     }
 // }
-
-
-
-
