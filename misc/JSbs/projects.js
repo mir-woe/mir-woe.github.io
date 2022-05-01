@@ -13,7 +13,7 @@ var IDs = {
 // stop being lazy and make .innerhtml into actual js dumb bitch ;-;
 
 for (let [key, value] of Object.entries(IDs)) {
-    var titleshit = key.replace('_', ' ')
+    var titleshit = key.replaceAll('_', ' ')
     document.getElementById("contentsReplace").style.display = "none";
 
     mother = document.getElementById("PageContentEncompass");
@@ -27,7 +27,7 @@ for (let [key, value] of Object.entries(IDs)) {
     <div class="subheadings">${titleshit}</div>
     <div Id="description"><p>${value[0]}</p></div>
     `;
-
+    
     if (value.length != 2) {
         imgparent = document.createElement("DIV")
         section.appendChild(imgparent);

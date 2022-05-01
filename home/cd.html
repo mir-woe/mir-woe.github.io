@@ -38,66 +38,108 @@
 <script src="../misc/JSbs/header.js"></script>
 <script src="../misc/JSbs/footer.js"></script>
 
-<body onload="myFooters();myHeaders()">
+<body onload="myFooters();myHeaders();">
     
 <style>
+    /* put the div in the middle of the page */
+    .center {
+    height: -webkit-fill-available;
+    height: fill-available;
+    min-height: -moz-available;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+
     .large{
         font-size: calc(20px + 6 * ((100vw - 300px) / 1000)) !important;
     }
+
+    #HeaderTitle{
+        color: var(--white1);
+        text-align: center;
+        margin: unset;
+    }
+
+    #HeaderTitle:hover{
+        color: var(--white2);
+    }
+
+    #birthdayCountdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    #percentRemaining{
+        width: 100%;
+        background-color: var(--gray1);
+    }
+    progress::-webkit-progress-bar {
+        background-color: var(--gray1);
+    }
+    progress::-webkit-progress-value {
+        background-color: var(--accent1);
+    }
+    progress::-moz-progress-bar {
+        background-color: var(--accent1);
+    }
+
+    .fullpageCountdown {
+    background-color: var(--bg1);
+    height: -webkit-fill-available;
+    height: fill-available;
+    min-height: -moz-available;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .fullpageCountdownInner {
+        width: 67%;
+        margin: auto;
+        max-width: 1500px;
+    }
+
+    @media only screen and (max-width: 768px) {
+    .fullpageCountdownInner {
+        width: 100%;
+        margin: unset;
+    }
+    }
+
 </style>
-<section id="PageContentEncompass">
+    <section id="PageContentEncompass" class="center">
 
-    <section class="note">
-        <!-- <p class="noteheader"> note </p> -->
-        <ol>
-            <ul>
-                <li> this page will be done in the next update. </li>
-                <li> the way it looks is not the final form. </li>
-                <li> buttons do not work. </li>
-            </ul>
-        </ol>
-    </section>
+            <div style="width: 100%;"> 
+                <div id="fullscreenCountdown">
+                    <div id="fullscreenCountdownInner">
+                        <div> 
+                            <h1 id="HeaderTitle">days till <span id="newage">[error]</span>th birthday</h1>
+                            <div id="birthdayCountdown">
+                                <p><span id="dayss" class="large">[error]</span>Days</p>
+                                <p><span id="hourss" class="large">[error]</span>Hours</p>
+                                <p><span id="minutess" class="large">[error]</span>Minutes</p>
+                                <p><span id="secondss" class="large">[error]</span>Seconds</p>
+                            </div>
+                        </div>
+    
+                        <progress id="percentRemaining" max="100"> </progress>
+                    </div>
+                </div>
 
-    <section id="PageContentEncompass">
-        <!-- <div> <p> days till <span id="newage">[error]</span>th birthday </p></div> -->
-        <div> 
-            <!-- 
-            title
-            timer: day / hour / min / sec 
-            buttons: dim / full screen 
-            -->
-
-            <!-- title -->
-            <div> 
-            <p> days till <span id="newage" class="large">[error]</span>th birthday </p>
+                <div style="display: grid;justify-content: center;">
+                    <!-- <button onclick="dim()"> dim </button> -->
+                    <button onclick="fullscreen()"> full screen </button>
+                </div>
             </div>
+            
 
-            <!-- day -->
-            <div>
-            <p> <span id="dayss" class="large">[error]</span>d</p>
-            </div>
-
-            <!-- hour  -->
-            <div>
-            <p> <span id="hourss" class="large">[error]</span>h</p>
-            </div>
-
-            <!-- min -->
-            <div>
-            <p> <span id="minutess" class="large">[error]</span>m</p>
-            </div>
-
-            <!-- sec -->
-            <div>
-            <p> <span id="secondss" class="large">[error]</span>s</p>
-            </div>
-
-            <!-- buttons -->
-            <div>
-                <button> dim </button>
-                <button> full screen </button>
-            </div>
-        </div>
     </section>
 
     <script>
@@ -105,7 +147,7 @@
     </script>
 
 </body>
-<script src="../misc/JSbs/age.js"></script>
-<script src="../misc/JSbs/basicinfo.js"></script>
+<script src="../misc/JSbs/cd.js"></script>
+<!-- <script src="../misc/JSbs/basicinfo.js"></script> -->
 
 </html>
