@@ -210,6 +210,59 @@
                 margin: 10 10 0 10;
             }
         }
+        
+        
+        
+
+
+               
+     /* from cd */
+    .center {
+    height: -webkit-fill-available;
+    height: fill-available;
+    min-height: -moz-available;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .large{
+        font-size: calc(20px + 6 * ((100vw - 300px) / 1000)) !important;
+    }
+
+    #HeaderTitle{
+        color: var(--white1);
+        text-align: center;
+        margin: unset;
+    }
+
+    #HeaderTitle:hover{
+        color: var(--white2);
+    }
+
+    #birthdayCountdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+       
+
+    .fullpageCountdownInner {
+        width: 67%;
+        margin: auto;
+        max-width: 1500px;
+    }
+
+    @media only screen and (max-width: 768px) {
+    .fullpageCountdownInner {
+        width: 100%;
+        margin: unset;
+    }
+    }
+
     </style>
     <section id="PageContentEncompass">
 
@@ -427,16 +480,28 @@
 
 
 
+
             <div id="birthday">
                 <div>
                     <a href="cd.html"><button> countdown page</button></a>
                     <button onclick="hideagebutton()"> close </button>
                 </div>
-                <p><span id="dayss">[error]</span> days </p>
-                <p><span id="hourss">[error]</span> hours </p>
-                <p><span id="minutess">[error]</span> minutes </p>
-                <p><span id="secondss">[error]</span> seconds</p>
+               <div style="width: 100%;"> 
+                <div id="fullscreenCountdown">
+                    <div id="fullscreenCountdownInner">
+                        <div> 
+                            <div id="birthdayCountdown">
+                                <p><span id="dayss" class="large">[error]</span>Days</p>
+                                <p><span id="hourss" class="large">[error]</span>Hours</p>
+                                <p><span id="minutess" class="large">[error]</span>Minutes</p>
+                                <p><span id="secondss" class="large">[error]</span>Seconds</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
             </div>
+
 
 
 
