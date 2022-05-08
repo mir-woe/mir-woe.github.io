@@ -15,7 +15,7 @@
         <meta property="og:title" content="projects I've worked on">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://mir-woe.github.io/">
-        <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+        <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
         <meta property="og:description" content="">
         <meta property="og:site_name" content="mir-woe">
         <meta data-n-head="true" name="theme-color" content="#45a5a3">
@@ -25,14 +25,16 @@
         <meta name="twitter:title" content="projects I've worked on">
         <meta name="twitter:description" content="">
         <meta name="twitter:creator" content="@author_handle">
-        <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+        <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
        
         <meta itemprop="name" content="projects I've worked on">
         <meta itemprop="description" content="">
-        <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+        <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
         
         <link rel="stylesheet" href="../style.css">
-        <link rel="icon" href="https://mir-woe.github.io/misc/images/icons/icon.png"> 
+        <link rel="icon" href="https://mir-woe.github.io/misc/images/icons/icon.webp"> 
+
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     </head>
     <script src="../misc/JSbs/header.js"></script>
@@ -40,25 +42,238 @@
     <body onload="myFooters();myHeaders()">
 
     <section id="PageContentEncompass">
-        
 
-        <section class="note" style="margin-top: 9px;"> 
+<!--         
+|=============================|
+|name|========================|
+|=============================|
+|description|=================|
+|=============================|
+|images|======================|
+|=============================|
+|===================visit respo|
+|====================visit site|
+|=================copy link|
+|=============================| -->
+
+<style>
+    .dropdown{
+        margin: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+    }
+
+    
+    .material-symbols-outlined {
+        transition: 0.4s;
+        padding: 2px;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+    
+    .material-symbols-outlined:hover{
+        cursor: pointer;
+        background-color: var(--bg1);
+        border-radius: 100px;
+    }
+
+    .active{
+        background-color: var(--bg1);
+        border-radius: 100px;
+    }
+    
+    .holder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .project{
+        background-color: var(--bg2);
+        width: 100%;
+        border-radius: 10px;
+        overflow-x: hidden;
+    }
+
+    .project-header{
+        border-bottom: 2px solid var(--accent1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    .project-description p{
+        text-align: left;
+    }
+
+    .project-header, .project-description{
+        padding-left: 10px;
+    }
+
+    .project-images{
+        display: none;
+        overflow-x: scroll;
+        /* display: flex; */
+    }
+
+    .read-more{
+        border-top: 2px solid var(--bg1);
+    }
+
+    .read-more > p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-links{
+        display: grid;    
+        justify-items: end;
+        justify-content: end;
+        padding-right: 10px;
+    }
+
+    @media (max-width: 1400px){
+        .holder{
+            grid-template-columns: 100%;
+        }
+    }
+    
+</style>
+
+        <section class="note" style="margin: 9px 0 9px 0;width:100%;width:-webkit-fill-available;width:-moz-available;"> 
             <p class="noteheader"> note </p>
             <ol> <ul>
-                <li> it's ugly af but i cba to work on the colours (then again entire site needs to be fixed in that aspect) for now . at least it works how i intended for it to </li>
-                <li> these are only projects i'm willing to show </li>
+                <li>not everything is displayed here</li>
             </ul></ol>
         </section>
 
-        <section id="contentsReplace"> 
-            <div class="child">
-                <h1 style="text-align: center;"> [error] could not load projects</h1>
+        <section class="holder">
+
+            <div class="project" id="Website">
+                <div class="project-header">
+                    <h1>mir-woe site</h1>
+                    <div class="dropdown">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>literally this site you're on currently. it's a work in progress, but it's pretty cool.</p>
+                </div>
+                <div class="project-images">
+                    <img src="../misc/images/icons/icon.webp" alt="project image">
+                </div>
             </div>
-        </section>
 
-        
 
+            <div class="project" id="MOBDiscTheme">
+                <div class="project-header">
+                    <h1>Aliucord theme</h1>
+                    <div class="dropdown">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>My theme for Aliucord, a discord mobile client. <br>Consist of pink and purple accents with a gray background.</p>
+                </div>
+                <div class="project-images">
+                    <p style=" color: var(--gray2);text-align:center"> click to view images </p>
+                </div>
+                <a href=""><div class="read-more"> <p>click to read more</p> </div></a>
+            </div>
+
+
+            <div class="project" id="PCDiscTheme">
+                <div class="project-header">
+                    <h1>PC-Disc-Theme - PC Woe Mode</h1>
+                    <div class="dropdown">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>A theme I made for powercord.</p>
+                </div>
+                <div class="project-images">
+                    <p style=" color: var(--gray2);text-align:center"> click to view images </p>
+                </div>
+                <a href=""><div class="read-more"> <p>click to read more</p> </div></a>
+            </div>
+
+
+            <div class="project" id="Matsaki">
+                <div class="project-header">
+                    <h1>Matsaki</h1>
+                    <div class="dropdown">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>Private discord bot in exclusive servers. That's the entire description for now...</p>
+                </div>
+                <div class="project-images">
+                    <img src="../misc/images/icons/icon.webp" alt="project image">
+                    <img src="../misc/images/icons/icon.webp" alt="project image">
+                    <img src="../misc/images/icons/icon.webp" alt="project image">
+                </div>
+                <a href=""><div class="read-more"> <p>click to read more</p> </div></a>
+            </div>
+        </section>    
+    
     </section>
+
+    <script>
+        // on material-symbols-outlined press show dropdown content
+        var dropdowns = document.getElementsByClassName("dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else if(dropdownContent.style.display = "none") {
+                    dropdownContent.style.display = "block";
+                } else { 
+                    window.onclick = function(event) {
+                        console.log("hiding")
+                        if (!event.target.matches('.dropdown')) {
+                            if (dropdownContent.style.display === "block") {
+                                dropdownContent.style.display = "none";
+                            }
+                        }
+                    }}
+            });
+        }
+    </script>
+
     <script>
         // window.location.href = "../coc.html";
     </script>

@@ -49,20 +49,14 @@ function ccc() {
     
     var percentageCompletedUntilBirthday = (diff / (365.25 * 24 * 60)) * 100;
     var completion = document.getElementById("percentRemaining")
-    completion.setAttribute("value", percentageCompletedUntilBirthday);
-
+    try{
+        completion.setAttribute("value", percentageCompletedUntilBirthday);
+    }catch(err){
+        console.log(err)
+    }
     setTimeout(ccc, 1000);
 }
 ccc();
-
-function showagebutton(){
-    document.getElementById("birthday").style.display = "inline-grid";
-}
-
-function hideagebutton(){
-    document.getElementById("birthday").style.display = "none";
-}
-
 
 var fullscreenElem = document.getElementById("fullscreenCountdown");
 

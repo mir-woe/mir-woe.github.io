@@ -14,7 +14,7 @@
     <meta property="og:title" content="welcome.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mir-woe.github.io/">
-    <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+    <meta property="og:image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
     <meta property="og:description" content="it's just a website, ain't it?">
     <meta property="og:site_name" content="mir-woe">
 
@@ -23,14 +23,14 @@
     <meta name="twitter:title" content="a bliming website, nothin special">
     <meta name="twitter:description" content="it's just a website, ain't it?">
     <meta name="twitter:creator" content="@author_handle">
-    <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+    <meta name="twitter:image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
 
     <meta itemprop="name" content="welcome.">
     <meta itemprop="description" content="it's just a website, ain't it?">
-    <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.png">
+    <meta itemprop="image" content="https://mir-woe.github.io/misc/images/icons/icon.webp">
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="../misc/images/icons/icon.png">
+    <link rel="icon" href="../misc/images/icons/icon.webp">
 </head>
 <script src="../misc/JSbs/footer.js"></script>
 <!-- <script src="../misc/JSbs/basicinfo.js"></script> -->
@@ -47,9 +47,9 @@
             justify-items: start;
             height: -webkit-fill-available;
             height: fill-available;
-            min-height: -moz-available;
+            min-height: -moz-available !important;
             height: 100%;
-            /* min-height: 500px; */
+            min-height: 500px;
         }
         
         #bottom {
@@ -92,22 +92,46 @@
             width: auto;
         }
         
-        #changelogs-header {
+        #changelogsHeader {
             border-bottom: 2px solid;
+            /* background-color: var(--bg2); */
             display: grid;
             grid-auto-flow: column;
             justify-items: center;
             align-items: center;
             justify-content: space-between;
+            border-radius: 10px 10px 0 0;
+            /* padding: 0 10px 0 10px; */
         }
         
         #changelogs-content {
             display: flex;
             flex-wrap: wrap;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        #revealChangelog > div:hover {
+            background-color: var(--bg2);
+        }
+
+        #revealChangelog > div{
+            background-color: var(--bg2);
+            border-radius: 10px;
+            transition: 0.4s;
+            margin-bottom: 10px;
+        }
+
+        #revealChangelog > div:hover {
+            background-color: var(--white1);
+        }
+
+        #revealChangelog p{
+            text-align: center !important;
         }
         
         @media only screen and (max-width: 768px) {
-            #PageContentEncompass {
+            #PageContentEncompass, #secondEncompass {
                 width: -webkit-fill-available !important;
                 min-width: -moz-available;
                 width: fill-available;
@@ -124,460 +148,457 @@
 
         <a href="https://mir-woe.github.io/home/profile.html"><button id="HomePageButtons"> profile </button></a>
         <a href="https://mir-woe.github.io/dev/list.html"><button id="HomePageButtons"> projects </button></a>
-        <a href="#changelogs"><button id="HomePageButtons"> change logs </button></a>
+        <a href="#changelogs"><button id="HomePageButtons"> changelogs </button></a>
 
         <a href="https://mir-woe.github.io/lost.html"><button id="HomePageButtons"> lost? view contents </button></a>
     </section>
-    <script>
-        function mom() {
-            var chronological = document.getElementById("CLolder");
-            var val = (chronological.options[chronological.selectedIndex].value)
-            var changelogs = document.getElementById("changelogs-content");
-            if (val == "OldToNew") {
-                changelogs.style.flexWrap = "wrap-reverse"
-            } else {
-                changelogs.style.flexWrap = "wrap"
-            }
-        }
-    </script>
-    <section id="PageContentEncompass">
-        <div id="changelogs">
 
-            <!-- top part change log + old->new button -->
-            <section id="changelogs-header">
-                <p id="changelogs-title"> Change logs </p>
-                <div style="display: inline-flex;flex-direction: row;align-content: flex-end;">
-                    <p> sort: </p>
-                    <select name="CLolder" id="CLolder" onclick="mom()">
-                        <option value="NewToOld">new to old</option>
-                        <option value="OldToNew">old to new</option>
-                    </select>
-                </div>
-            </section>
+    <section id="secondEncompass">
+        <div id="changelogsExpanded" class="centershi">
+            <div id="changelogs">
 
-            <!-- actual change logs  -->
-            <section id="changelogs-content">
-
-                <!--                 
-                <div id="" class="child">
-                    <p class="subheadings"></p>
-                    <div>
-                        <ol><ul>
-                            <li></li>
-                        </ul></ol>
+                <!-- top part changelog + old->new button -->
+                <section id="changelogsHeader">
+                    <p id="changelogs-title"> changelogs </p>
+                    <div style="display:none;" id="changelogOrder">
+                        <p> sort: </p>
+                        <select name="CLolder" id="CLolder" onchange="mom()">
+                            <option value="NewToOld">new to old</option>
+                            <option value="OldToNew">old to new</option>
+                        </select>
                     </div>
-                </div> 
-                -->
-                <div id="3.7.0" class="child">
-                    <p class="subheadings">Version 3.7.0 - May 1, 2022 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> renamed age -> cd </li>
-                                <li> completed <a href="cd.html">countdown page</a> </li>
-                                <li> - changed the way the timer looks </li>
-                                <li> - adding a fullscreen feature </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.6.3" class="child">
-                    <p class="subheadings">Version 3.6.3 - Apr 4, 2022 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> removed broken links </li>
-                                <li> removed psychology </li>
-                                <li> removed matsaki </li>
-                                <li> fixed footer differences between mobile viewing and pc </li>
-                                <li> fixed homepage footer margin-top </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.6.2" class="child">
-                    <p class="subheadings">Version 3.6.2 - Mar 1, 2022 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> css fixes on 404 page </li>
-                                <li> changelog version fixes</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.6.1" class="child">
-                    <p class="subheadings">Version 3.6.1 - Mar 1, 2022 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> css fixes on 404 page </li>
-                                <li> safari spelling errors fixed </li>
-                                <li> cleaned html on construction page</li>
-                                <li> improved css compatibility</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.6.0" class="child">
-                    <p class="subheadings">Version 3.6.0 - Feb 28, 2022 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> created 404 page</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.5.0" class="child">
-                    <p class="subheadings">Version 3.5.0 - Dec 22, 2021 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>creation of homepage and changelogs</li>
-                                <li>countdown filler</li>
-                                <li>safari, firefox and ms browser fixes</li>
-                                <li>footer refresh</li>
-                                <li>header refresh</li>
-                                <li>image fix for different screen sizes on coc</li>
-                                <li>improved absoolute search</li>
-                                <li>all page borders redesign</li>
-                                <li>secondary background colour (#191e27)</li>
-                                <li>header changes</li>
-                                <li>psychology brainstorms</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <section class="note" style="margin-top: 9px;">
-                    <!-- <p class="noteheader"> note </p> -->
-                    <ol>
-                        <ul>
-                            <li> any changelog notes made prior to Version 3.5.0 may be inaccurate </li>
-                        </ul>
-                    </ol>
                 </section>
 
-                <div id="3.4.5" class="child">
-                    <p class="subheadings">Version 3.4.5 - Dec 6, 2021</p>
-                    <div>
+                <!-- actual changelogs  -->
+                <section id="changelogs-content">
+
+                    <!--                 
+                    <div id="" class="child changelogUpdates">
+                        <p class="subheadings"></p>
+                        <div>
+                            <ol><ul>
+                                <li></li>
+                            </ul></ol>
+                        </div>
+                    </div> 
+                    -->
+
+                    <div id="3.8.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.8.0 - n/a</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>converted and compressed files from webp to webp</li>
+                                    <li>expandable changelog (ability to edit order hidden until changelog explanded)</li>
+                                    <li>removed countdown on profile page</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.7.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.7.2 - May 1, 2022</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>updated timer style for desktop view in profile page</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.7.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.7.1 - May 1, 2022</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>fixed errors caused by file name change</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.7.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.7.0 - May 1, 2022 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> renamed age -> cd </li>
+                                    <li> completed <a href="cd.html">countdown page</a> </li>
+                                    <li> - changed the way the timer looks </li>
+                                    <li> - adding a fullscreen feature </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.6.3" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.6.3 - Apr 4, 2022 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> removed broken links </li>
+                                    <li> removed psychology </li>
+                                    <li> removed matsaki </li>
+                                    <li> fixed footer differences between mobile viewing and pc </li>
+                                    <li> fixed homepage footer margin-top </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.6.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.6.2 - Mar 1, 2022 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> css fixes on 404 page </li>
+                                    <li> changelog version fixes</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.6.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.6.1 - Mar 1, 2022 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> css fixes on 404 page </li>
+                                    <li> safari spelling errors fixed </li>
+                                    <li> cleaned html on construction page</li>
+                                    <li> improved css compatibility</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.6.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.6.0 - Feb 28, 2022 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> created 404 page</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.5.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.5.0 - Dec 22, 2021 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>creation of homepage and changelogs</li>
+                                    <li>countdown filler</li>
+                                    <li>safari, firefox and ms browser fixes</li>
+                                    <li>footer refresh</li>
+                                    <li>header refresh</li>
+                                    <li>image fix for different screen sizes on coc</li>
+                                    <li>improved absoolute search</li>
+                                    <li>all page borders redesign</li>
+                                    <li>secondary background colour (#191e27)</li>
+                                    <li>header changes</li>
+                                    <li>psychology brainstorms</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <section class="note changelogUpdates" style="margin-top: 9px;">
+                        <!-- <p class="noteheader"> note </p> -->
                         <ol>
                             <ul>
-                                <li> fixed search </li>
-                                <li> fixed id and class errors </li>
-                                <li> clean JS </li>
-                                <li> psychology index </li>
-                                <li> deleting "cringe" </li>
+                                <li> any changelog notes made prior to Version 3.5.0 may be inaccurate </li>
                             </ul>
                         </ol>
-                    </div>
-                </div>
+                    </section>
 
-                <div id="3.4.4" class="child">
-                    <p class="subheadings">Version 3.4.4 - Nov 26, 2021</p>
+                    <div id="3.4.5" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.5 - Dec 6, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> fixed search </li>
+                                    <li> fixed id and class errors </li>
+                                    <li> clean JS </li>
+                                    <li> psychology index </li>
+                                    <li> deleting "cringe" </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.4.4" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.4 - Nov 26, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> minor profile fixes </li>
+                                    <li> change of hosting </li>
+                                    <li> removed viewbox for safari </li>
+                                    <li> fixed hyperlinks in redirects </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.4.3" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.3 - Nov 24, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> image correction for mobile viewing </li>
+                                    <li> clean profile and countdown css </li>
+                                    <li> enabled css and footer on lost.html </li>
+                                    <li> added revolt </li>
+                                    <li> fix gdev, revolt and cashapp webps </li>
+                                    <li> fix redirect links </li>
+                                    <li> fix css loading on redirects </li>
+                                    <li> fixed border width </li>
+                                    <li> fixed track bar </li>
+                                    <li> fixed hyperlink tag font size </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.4.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.2 - Nov 21, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> grammar corrections </li>
+                                    <li> theme-color corrections in embeds and tabs for paypal, github, cashapp </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.4.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.1 - Nov 21, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li> readme.md </li>
+                                    <li> rewriting notes </li>
+                                    <li> cleaning css </li>
+                                    <li> fixing values, ids and alts </li>
+                                    <li> fixing cashapp and paypal </li>
+                                    <li> rewording of navigation </li>
+                                    <li> fixed footer padding </li>
+                                    <li> fixed projects page </li>
+                                    <li> fixed search function </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="3.4.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.4.0 - Nov 18, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>profile page design refresh! (had been the same design since v2)</li>
+                                    <li>creation of changelogs - anything prior to version 3.4.0 may be inaccurate or have missing details</li>
+                                    <li>addition of paypal and cashapp</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                    <div id="3.3.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.3.2 - Nov 21, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>theme-color corrections for embeds and others in redirects</li>
+                                    <li>mobile button fixed</li>
+                                    <li>tab button fixed</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                    <div id="3.3.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.3.1 - Nov 21, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>changes to projects.html</li>
+                                    <li>successfully loading projects</li>
+                                    <li>cleaning profile.css</li>
+                                    <li>working search</li>
+                                    <li>cashapp</li>
+                                    <li>paypal</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.3.0" class="child changelogUpdates">
+                        <p class="subheadings"> Version 3.3.0 - Nov 18, 2021 </p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>reorganise all files</li>
+                                    <li>added date of birth to basic info </li>
+                                    <li>added links to basic info</li>
+                                    <li>temp working lost page</li>
+                                    <li>creation of countdown page</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.2.3" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.2.3 - Nov 6, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>cleaned age.js code </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.2.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.2.2 - Oct 24, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>basicinfo integrated throughout site </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.2.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.2.1 - Oct 13, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>redirects added</li>
+                                    <li>rebrand.</li>
+                                    <li>link changes</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.2.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.2.0 - Oct 1, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>integrated old website code</li>
+                                    <li>link changes</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.1.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.1.1 - Sep 20, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>formatted footer</li>
+                                    <li>meta data changes</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.1.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.1.0 - Sep 20, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>Headers and Footers implemented throughout site</li>
+                                    <li>deletion of unnecessary code</li>
+                                    <li>link changes</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.0.2" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.0.2 - Sep 19, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>back button fix in construction page</li>
+                                    <li>age.js created - working code</li>
+                                    <li>editing profile.html - age.js implemented</li>
+                                    <li>css further cleaned</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.0.1" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.0.1 - Sep 18, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>- css cleaning</li>
+                                    <li>- fixing images</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div id="3.0.0" class="child changelogUpdates">
+                        <p class="subheadings">Version 3.0.0 - Sep 18, 2021</p>
+                        <div>
+                            <ol>
+                                <ul>
+                                    <li>reorganisation of files</li>
+                                    <li>purge of files</li>
+                                    <li>about page kept</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+
+                </section>
+
+                <a href="#changelogsExpanded" style="cursor: pointer;" id="revealChangelog" onclick="revealChangelog()">
                     <div>
-                        <ol>
-                            <ul>
-                                <li> minor profile fixes </li>
-                                <li> change of hosting </li>
-                                <li> removed viewbox for safari </li>
-                                <li> fixed hyperlinks in redirects </li>
-                            </ul>
-                        </ol>
+                        <p style=" color: var(--gray2);text-align:center"> click to <span id="revealChangelogVariable">expand</span> changelog </p>
                     </div>
-                </div>
-
-                <div id="3.4.3" class="child">
-                    <p class="subheadings">Version 3.4.3 - Nov 24, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> image correction for mobile viewing </li>
-                                <li> clean profile and countdown css </li>
-                                <li> enabled css and footer on lost.html </li>
-                                <li> added revolt </li>
-                                <li> fix gdev, revolt and cashapp pngs </li>
-                                <li> fix redirect links </li>
-                                <li> fix css loading on redirects </li>
-                                <li> fixed border width </li>
-                                <li> fixed track bar </li>
-                                <li> fixed hyperlink tag font size </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.4.2" class="child">
-                    <p class="subheadings">Version 3.4.2 - Nov 21, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> grammar corrections </li>
-                                <li> theme-color corrections in embeds and tabs for paypal, github, cashapp </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.4.1" class="child">
-                    <p class="subheadings">Version 3.4.1 - Nov 21, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li> readme.md </li>
-                                <li> rewriting notes </li>
-                                <li> cleaning css </li>
-                                <li> fixing values, ids and alts </li>
-                                <li> fixing cashapp and paypal </li>
-                                <li> rewording of navigation </li>
-                                <li> fixed footer padding </li>
-                                <li> fixed projects page </li>
-                                <li> fixed search function </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-                <div id="3.4.0" class="child">
-                    <p class="subheadings">Version 3.4.0 - Nov 18, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>profile page design refresh! (had been the same design since v2)</li>
-                                <li>creation of changelogs - anything prior to version 3.4.0 may be inaccurate or have missing details</li>
-                                <li>addition of paypal and cashapp</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
+                </a>
 
 
-
-                <div id="3.3.2" class="child">
-                    <p class="subheadings">Version 3.3.2 - Nov 21, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>theme-color corrections for embeds and others in redirects</li>
-                                <li>mobile button fixed</li>
-                                <li>tab button fixed</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-
-                <div id="3.3.1" class="child">
-                    <p class="subheadings">Version 3.3.1 - Nov 21, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>changes to projects.html</li>
-                                <li>successfully loading projects</li>
-                                <li>cleaning profile.css</li>
-                                <li>working search</li>
-                                <li>cashapp</li>
-                                <li>paypal</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.3.0" class="child">
-                    <p class="subheadings"> Version 3.3.0 - Nov 18, 2021 </p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>reorganise all files</li>
-                                <li>added date of birth to basic info </li>
-                                <li>added links to basic info</li>
-                                <li>temp working lost page</li>
-                                <li>creation of countdown page</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.2.3" class="child">
-                    <p class="subheadings">Version 3.2.3 - Nov 6, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>cleaned age.js code </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.2.2" class="child">
-                    <p class="subheadings">Version 3.2.2 - Oct 24, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>basicinfo integrated throughout site </li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.2.1" class="child">
-                    <p class="subheadings">Version 3.2.1 - Oct 13, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>redirects added</li>
-                                <li>rebrand.</li>
-                                <li>link changes</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.2.0" class="child">
-                    <p class="subheadings">Version 3.2.0 - Oct 1, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>integrated old website code</li>
-                                <li>link changes</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.1.1" class="child">
-                    <p class="subheadings">Version 3.1.1 - Sep 20, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>formatted footer</li>
-                                <li>meta data changes</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.1.0" class="child">
-                    <p class="subheadings">Version 3.1.0 - Sep 20, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>Headers and Footers implemented throughout site</li>
-                                <li>deletion of unnecessary code</li>
-                                <li>link changes</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.0.2" class="child">
-                    <p class="subheadings">Version 3.0.2 - Sep 19, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>back button fix in construction page</li>
-                                <li>age.js created - working code</li>
-                                <li>editing profile.html - age.js implemented</li>
-                                <li>css further cleaned</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.0.1" class="child">
-                    <p class="subheadings">Version 3.0.1 - Sep 18, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>- css cleaning</li>
-                                <li>- fixing images</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div id="3.0.0" class="child">
-                    <p class="subheadings">Version 3.0.0 - Sep 18, 2021</p>
-                    <div>
-                        <ol>
-                            <ul>
-                                <li>reorganisation of files</li>
-                                <li>purge of files</li>
-                                <li>about page kept</li>
-                            </ul>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-
-
+            </div>
         </div>
     </section>
 
 
-    <footer style="margin-top: 10px;">
+    <footer>
         <p id="leftist">&#169; 2020 - <span id="cpyear">n</span> woe / all rights reserved.</p>
         <p id="rightist"><a target=blank href="https://github.com/mir-woe/mir-woe.github.io">source code</a></p>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <section class="note" style="margin-top: 10px;">
-        <div>
-        <p class="noteheader"> note </p>
-        <p> 
-            <ol>
-                <li> most pages are currently under construction so may be unavailable at the current moment of time </li>
-                <li> many elements may be displayed as error or simply fail to load due to my lazy ass not actually making them yet </li>
-            </ol>
-        </p>
-        </div>
-    </section>
-
-    <section class="child">
-    
-        <div>
-            <p> owner: <span id="ownername"> [error] </span></p>
-            <p> version: <span id="webversion"> [error] </span></p>
-            <p> changelogs (not implemented yet) </p>
-        </div>
-        
-    </section>
-    -->
     <script src="../misc/JSbs/basicinfo.js"></script>
     <script src="../misc/JSbs/home.js"></script>
     <script>
         //    window.location.href = "../coc.html";
     </script>
 </body>
-
 </html>

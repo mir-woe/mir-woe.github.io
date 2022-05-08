@@ -7,7 +7,7 @@ var IDs = {
     Aliucord_Theme: ['My theme for Aliucord, a discord mobile client. <br>Consist of pink and purple accents with a gray background.', 'https://github.com/mir-woe/woe-mode-mobile'],
     Powercord_Theme: ['My theme for Powercord. <br>Has a gray background and alternating accents: Dark = Pink + Purple, Light = Red', 'https://github.com/mir-woe/PC-WoeMode'],
     Matsaki: ['Private discord bot in exclusive servers. That\'s the entire description for now...'],
-    Demonstation: ['demonsration of if I had images on any of these :sob:', 'null', '../misc/images/misc/cocit.gif', '../misc/images/icons/pfp.png', '']
+    Demonstation: ['demonsration of if I had images on any of these :sob:', 'null', '../misc/images/misc/cocit.gif', '../misc/images/icons/pfp.webp', '']
 }
 
 // stop being lazy and make .innerhtml into actual js dumb bitch ;-;
@@ -46,7 +46,7 @@ for (let [key, value] of Object.entries(IDs)) {
 
     if (value[1] != "null" && value[1] != undefined) {
         GitHubLink.innerHTML += `
-        <a class="socials" target="blank" href="${value[1]}"><img src="../misc/images/socials/github.png" alt="${key}_Link" class="brandimg"></a>
+        <a class="socials" target="blank" href="${value[1]}"><img src="../misc/images/socials/github.webp" alt="${key}_Link" class="brandimg"></a>
         `
     } else {
         GitHubLink.innerHTML += `<p style="text-align:center"> This respository is private </p>`
@@ -84,7 +84,7 @@ for (let [key, value] of Object.entries(IDs)) {
 //                 for (var subvalues in loopnumbertwo) {
 //                     if (loopnumbertwo.hasOwnProperty(subvalues)) {
 //                         try {
-//                             if (document.getElementById(value).innerHTML += `<div><a class="socials" target="blank" href="${loopnumbertwo[subvalues]}"><img src="../misc/images/socials/github.png" alt="github" class="brandimg    "></a></div>`) {
+//                             if (document.getElementById(value).innerHTML += `<div><a class="socials" target="blank" href="${loopnumbertwo[subvalues]}"><img src="../misc/images/socials/github.webp" alt="github" class="brandimg    "></a></div>`) {
 //                             }
 
 //                         } catch (err) {

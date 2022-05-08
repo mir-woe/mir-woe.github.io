@@ -2,6 +2,14 @@
 
 /*   font-family: 'Noto Sans', sans-serif; */
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 :root {
     --bg1: #14181f;
     --bg2: #191e27;
@@ -45,10 +53,14 @@ ol {
     padding: 0px;
 }
 
-#PageContentEncompass {
+#PageContentEncompass, #secondEncompass {
     width: 67%;
     margin: auto;
     max-width: 1500px;
+}
+
+select:hover{
+    cursor: pointer;
 }
 
 .note {
@@ -355,6 +367,7 @@ button:hover {
     color: var(--bg1);
     background-color: var(--white1);
     width: 110px;
+    cursor: pointer;
 }
 
 #Search {
@@ -448,7 +461,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    #PageContentEncompass {
+    #PageContentEncompass, #secondEncompass {
         width: 100%;
         margin: unset;
     }
